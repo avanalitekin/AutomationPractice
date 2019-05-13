@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12055" started-at="2019-05-09T05:41:57Z" finished-at="2019-05-09T05:42:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12055" started-at="2019-05-09T05:41:57Z" finished-at="2019-05-09T05:42:09Z">
+      <class name="AutomationPractice.FluentWaitDemo">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AutomationPractice.FluentWaitDemo@13805618]" name="setUp" is-config="true" duration-ms="5182" started-at="2019-05-09T05:41:57Z" finished-at="2019-05-09T05:42:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test()[pri:0, instance:AutomationPractice.FluentWaitDemo@13805618]" name="test" duration-ms="6213" started-at="2019-05-09T05:42:02Z" finished-at="2019-05-09T05:42:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="close()[pri:0, instance:AutomationPractice.FluentWaitDemo@13805618]" name="close" is-config="true" duration-ms="624" started-at="2019-05-09T05:42:08Z" finished-at="2019-05-09T05:42:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- AutomationPractice.FluentWaitDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
