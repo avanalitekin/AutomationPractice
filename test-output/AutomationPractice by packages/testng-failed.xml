@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationPractice by packages]">
+  <test thread-count="5" name="APIReview(failed)">
+    <classes>
+      <class name="APIReview.JsonPathDemoBookIt">
+        <methods>
+          <include name="postTeam"/>
+          <include name="clusterAPITest"/>
+          <include name="setUp"/>
+          <include name="postStudent"/>
+        </methods>
+      </class> <!-- APIReview.JsonPathDemoBookIt -->
+      <class name="APIReview.Pojo_Cybertek_Students">
+        <methods>
+          <include name="allStudentsAPITest"/>
+          <include name="oneStudentAPITest1"/>
+        </methods>
+      </class> <!-- APIReview.Pojo_Cybertek_Students -->
+    </classes>
+  </test> <!-- APIReview(failed) -->
+</suite> <!-- Failed suite [AutomationPractice by packages] -->

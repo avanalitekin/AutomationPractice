@@ -14,7 +14,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class JsonPathDemo {
-//  @Test
+  @Test
   public void instructorAll(){
       Response response = RestAssured.get("http://cybertekchicago.com/instructor/all");
       response.then().log().body();
@@ -36,7 +36,7 @@ public class JsonPathDemo {
 //    }
 //    System.out.println(subjects.size());
 //    System.out.println(subjects);
-    System.out.println(instructors);
+    System.out.println("instructors: "+instructors);
  } 
   
 //  @Test
@@ -100,7 +100,7 @@ public class JsonPathDemo {
 	  } 
 
   }
-  @Test
+//  @Test
   public void driverInfo3() {
 	  Response response=RestAssured.get("http://ergast.com/api/f1/drivers.json");
 //	  response.then().log().all();

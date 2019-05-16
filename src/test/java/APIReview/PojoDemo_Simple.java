@@ -27,7 +27,7 @@ public class PojoDemo_Simple {
 		System.out.println(backToPerson1String);
 	}
 	
-	@Test
+//	@Test
 	public void driversTest() {
 		 Response response=RestAssured.get("http://ergast.com/api/f1/drivers.json");
 //		  response.then().log().all();

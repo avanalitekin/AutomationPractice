@@ -70,7 +70,7 @@ public class PojoDemo_Person {
 	System.out.println(backToPersonG.getRegion());
 	}
 	
-	@Test
+//	@Test
 	public void testWithAPI() throws IOException {
 	Response response=RestAssured.get("");
 	response.then().log().all();
@@ -111,7 +111,7 @@ public class PojoDemo_Person {
 		String format="%-10s%-10s%-10s%-10s%-10s%-10s%-10s%10s%n";
 		System.out.printf(format, "name:",person.getName(),"last name:",person.getSurname(),"gender:",person.getGender(),"region",person.getRegion());
 	}
-		
+		System.out.println(persons.get(8).getSurname());
 	}
 
 }

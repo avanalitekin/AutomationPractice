@@ -8,11 +8,57 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">12,055</td><td></td><td></td></tr>
+<tr><th colspan="7">AutomationPractice</th></tr>
+<tr><td><a href="#t0">APITesting</a></td><td class="num">6</td><td class="num attn">3</td><td class="num attn">2</td><td class="num">7,601</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">AutomationPractice.FluentWaitDemo</td><td><a href="#m0">test</a></td><td rowspan="1">1557380522331</td><td rowspan="1">6213</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AutomationPractice</th></tr></tbody><tbody id="t0"><tr><th colspan="4">APITesting &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">APIReview.JsonPathDemoBookIt</td><td><a href="#m0">setUp</a></td><td rowspan="1">1558043796714</td><td rowspan="1">1</td></tr><tr><th colspan="4">APITesting &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">APIReview.Pojo_Cybertek_Students</td><td><a href="#m1">allStudentsAPITest</a></td><td rowspan="1">1558043796724</td><td rowspan="1">198</td></tr><tr class="failedeven"><td><a href="#m2">oneStudentAPITest1</a></td><td rowspan="1">1558043796924</td><td rowspan="1">116</td></tr><tr><th colspan="4">APITesting &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">APIReview.JsonPathDemoBookIt</td><td><a href="#m3">clusterAPITest</a></td><td rowspan="1">1558043796722</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">postStudent</a></td><td rowspan="1">1558043797049</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">postTeam</a></td><td rowspan="1">1558043796720</td><td rowspan="1">0</td></tr><tr><th colspan="4">APITesting &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">APIReview.JWTAuthentication01</td><td><a href="#m6">getToken</a></td><td rowspan="1">1558043797055</td><td rowspan="1">662</td></tr><tr class="passedeven"><td><a href="#m7">postPostsWithToken</a></td><td rowspan="1">1558043797718</td><td rowspan="1">1210</td></tr><tr class="passedeven"><td><a href="#m8">postUserWithJWT</a></td><td rowspan="1">1558043798930</td><td rowspan="1">1364</td></tr><tr class="passedodd"><td rowspan="1">APIReview.JsonConversion</td><td><a href="#m9">convertXMLToJson</a></td><td rowspan="1">1558043792719</td><td rowspan="1">18</td></tr><tr class="passedeven"><td rowspan="1">APIReview.LoginDemo</td><td><a href="#m10">userNamePasswordTest</a></td><td rowspan="1">1558043792739</td><td rowspan="1">238</td></tr><tr class="passedodd"><td rowspan="1">APIReview.WP1_Map_Pojo_InsteadOfJsonPath</td><td><a href="#m11">post_User_With_PojoClass</a></td><td rowspan="1">1558043793382</td><td rowspan="1">3328</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">AutomationPractice.FluentWaitDemo#test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>APITesting</h2><h3 id="m0">APIReview.JsonPathDemoBookIt#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: utilities/BookItAPIUtility
+	at APIReview.JsonPathDemoBookIt.setUp(JsonPathDemoBookIt.java:27)
+Caused by: java.lang.ClassNotFoundException: utilities.BookItAPIUtility
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">APIReview.Pojo_Cybertek_Students#allStudentsAPITest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: ModelClasses/Cybertek/Students
+	at APIReview.Pojo_Cybertek_Students.allStudentsAPITest(Pojo_Cybertek_Students.java:47)
+Caused by: java.lang.ClassNotFoundException: ModelClasses.Cybertek.Students
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 26 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">APIReview.Pojo_Cybertek_Students#oneStudentAPITest1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: ModelClasses/Cybertek/Students
+	at APIReview.Pojo_Cybertek_Students.oneStudentAPITest1(Pojo_Cybertek_Students.java:23)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">APIReview.JsonPathDemoBookIt#clusterAPITest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: utilities/BookItAPIUtility
+	at APIReview.JsonPathDemoBookIt.setUp(JsonPathDemoBookIt.java:27)
+Caused by: java.lang.ClassNotFoundException: utilities.BookItAPIUtility
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">APIReview.JsonPathDemoBookIt#postStudent</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method JsonPathDemoBookIt.postStudent()[pri:0, instance:APIReview.JsonPathDemoBookIt@78047b92] depends on not successfully finished methods
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">APIReview.JsonPathDemoBookIt#postTeam</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: utilities/BookItAPIUtility
+	at APIReview.JsonPathDemoBookIt.setUp(JsonPathDemoBookIt.java:27)
+Caused by: java.lang.ClassNotFoundException: utilities.BookItAPIUtility
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">APIReview.JWTAuthentication01#getToken</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">APIReview.JWTAuthentication01#postPostsWithToken</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">APIReview.JWTAuthentication01#postUserWithJWT</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">APIReview.JsonConversion#convertXMLToJson</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">APIReview.LoginDemo#userNamePasswordTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">APIReview.WP1_Map_Pojo_InsteadOfJsonPath#post_User_With_PojoClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

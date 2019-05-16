@@ -7,23 +7,21 @@ import java.util.Properties;
 
 public class ConfigurationReader {
 
-	private static Properties properties;
+    private static Properties properties;
 
-	static {
-		String path = "configuration.properties";
+    public static String getProperty(String key){
+        String path = "configuration.properties";
 
-		try {
-			FileInputStream fileInputStream = new FileInputStream(path);
-			properties = new Properties();
-			properties.load(fileInputStream);
-			fileInputStream.close();
-		} catch (FileNotFoundException fnf) {
-			fnf.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	public static String getProperty(String property) {
-	return properties.getProperty(property);
-	}
+        try {
+            FileInputStream stream = new FileInputStream(path);
+            properties = new Properties();
+            properties.load(stream);
+            stream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return properties.getProperty(key);
+    }
 }

@@ -1,5 +1,8 @@
 package APIReview;
 
+import utilities.DBUtility;
+import utilities.APIUtility;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -13,8 +16,8 @@ import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import utilities.APIUtility;
-import utilities.DBUtility;
+
+
 
 public class JWTAuthentication01 {
 	String token;
@@ -30,7 +33,7 @@ public class JWTAuthentication01 {
 	System.out.println(token);
 	}
 	
-//	@Test (priority=1)
+	@Test (priority=1)
 	public void postPostsWithToken() {
 		RestAssured.baseURI="https://www.avanalitekin-api-testing.dev.cc";
 		RestAssured.basePath="/wp-json/wp/v2";
@@ -51,7 +54,8 @@ public class JWTAuthentication01 {
 		.post("/posts").then().statusCode(201).body("status", Matchers.is("publish"));
 		
 	}
-	@Test
+	
+	@Test (priority=2)
 	public void postUserWithJWT() {
 		RestAssured.baseURI="https://www.avanalitekin-api-testing.dev.cc";
 		RestAssured.basePath="/wp-json/wp/v2";
