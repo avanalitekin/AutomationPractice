@@ -24,10 +24,10 @@ driver.get("http://www.naukri.com/");
 String parent=driver.getWindowHandle();
  
 // This will return the number of windows opened by Webdriver and will return Set of St//rings
-Set<String>s1=driver.getWindowHandles();
+Set<String> windowHandles=driver.getWindowHandles();
  
 // Now we will iterate using Iterator
-Iterator<String> I1= s1.iterator();
+Iterator<String> I1= windowHandles.iterator();
  
 while(I1.hasNext())
 {

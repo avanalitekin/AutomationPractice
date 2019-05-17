@@ -3,6 +3,7 @@ package AutomationPractice;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,22 +20,25 @@ import org.testng.annotations.Test;
 
 public class AAATest {
 
-	@FindBy(xpath = "//*[@id='quantity_wanted']")
-	public static WebElement quantityDefault;
 	
-	public static int enterQuantity() {
-		int  quantity=new Random().nextInt(3)+3;
-		quantityDefault.clear();
-		quantityDefault.sendKeys(String.valueOf(quantity));
-		return quantity;
-	}
 
 
 	public static void main(String[] args) {
 		WebDriver driver=new ChromeDriver();
-		driver.get("http://automationpractice.com/index.php");
-		quantityDefault.clear();
-		enterQuantity();		
+		driver.get("https://kcfse.org/");
+		String parentWindow=driver.getWindowHandle();
+		driver.findElement(By.xpath("//*[contains(text(),'ACT')]")).click();
+		Set<String> windowHandles=driver.getWindowHandles();
+		for(String window:windowHandles) {
+			if(!window.equals(parentWindow)) {
+				driver.switchTo().window(window);
+				
+			}
+		}
+		
+		driver.findElement(By.xpath("//*[contains(text(),'Sign In')]")).click();
+		
+
 		
 			}
 	

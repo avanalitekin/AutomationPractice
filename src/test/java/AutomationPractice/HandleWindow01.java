@@ -21,20 +21,26 @@ public class HandleWindow01 {
 	@Test
 	public void test() {
 	String parentWindow=driver.getWindowHandle();
-	System.out.println(parentWindow);
+	System.out.println("parentWindow: "+parentWindow);
 	Set<String> allWindows=driver.getWindowHandles();
-	Iterator<String> iterator=allWindows.iterator();
-	while(iterator.hasNext())
-	{
-		String childWindow=iterator.next();
-		if(!parentWindow.equals(childWindow))
-		{
-			driver.switchTo().window(childWindow);
-			System.out.println(driver.switchTo().window(childWindow).getTitle());
-			driver.close();
-		}
+//	Iterator<String> iterator=allWindows.iterator();
+	for (String windowHandle:allWindows) {
+		driver.switchTo().window(windowHandle);
+		System.out.println("windowHandle: "+windowHandle);
+		System.out.println("driver.getTitle(): "+driver.getTitle());
+		driver.switchTo().window(windowHandle).close();
 	}
-		driver.switchTo().window(parentWindow);
+//	while(iterator.hasNext())
+//	{
+//		String childWindow=iterator.next();
+//		if(!parentWindow.equals(childWindow))
+//		{
+//			driver.switchTo().window(childWindow);
+//			System.out.println(driver.switchTo().window(childWindow).getTitle());
+//			driver.close();
+//		}
+//	}
+//		driver.switchTo().window(parentWindow);
 	}
 	
 	@AfterClass
