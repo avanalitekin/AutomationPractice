@@ -20,7 +20,8 @@ public class JsonPathDemo {
       response.then().log().body();
 //    System.out.println(response.asString());
     JsonPath jp = response.jsonPath();
-    System.out.println(jp.get("instructors.id"));
+    List<String> instructorIds=jp.get("instructors.id");
+    System.out.println(instructorIds);
     ArrayList<Integer> batchList=jp.get("instructors.batch");
 //    Collections.sort(batchList);
     System.out.println(batchList);
@@ -39,7 +40,7 @@ public class JsonPathDemo {
     System.out.println("instructors: "+instructors);
  } 
   
-//  @Test
+  @Test
   public void instructorOne(){
       Response response = RestAssured.get("http://cybertekchicago.com/instructor/61");
       response.then().log().body();
@@ -51,7 +52,7 @@ public class JsonPathDemo {
       System.out.println("batch number: "+jp.get("batch"));
       System.out.println("subject: "+jp.get("subject"));
    }   
-//  @Test
+  @Test
   public void driverInfo() {
 	  Response response=RestAssured.get("http://ergast.com/api/f1/drivers.json");
 //	  response.then().log().all();
@@ -73,7 +74,7 @@ public class JsonPathDemo {
 	  System.out.println("dateOfBirth: "+dateOfBirth);
 	  System.out.println("nationality: "+nationality);
   }
-//  @Test
+  @Test
   public void driverInfo2() {
 	  Response response=RestAssured.get("http://ergast.com/api/f1/drivers.json");
 //	  response.then().log().all();
@@ -100,7 +101,7 @@ public class JsonPathDemo {
 	  } 
 
   }
-//  @Test
+  @Test
   public void driverInfo3() {
 	  Response response=RestAssured.get("http://ergast.com/api/f1/drivers.json");
 //	  response.then().log().all();

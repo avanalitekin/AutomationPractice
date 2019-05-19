@@ -7,9 +7,8 @@ public class Clusters {
 	int id;
 	String name;
 	List<Rooms> rooms;
-	List<Clusters> clusters;
+	Clusters[] clusters;
 	Rooms room;
-	
 	public int getId() {
 		return id;
 	}
@@ -28,10 +27,10 @@ public class Clusters {
 	public void setRooms(List<Rooms> rooms) {
 		this.rooms = rooms;
 	}
-	public List<Clusters> getClusters() {
+	public Clusters[] getClusters() {
 		return clusters;
 	}
-	public void setClusters(List<Clusters> clusters) {
+	public void setClusters(Clusters[] clusters) {
 		this.clusters = clusters;
 	}
 	public Rooms getRoom() {
@@ -40,4 +39,7 @@ public class Clusters {
 	public void setRoom(Rooms room) {
 		this.room = room;
 	}
+	
+	
+	
 }

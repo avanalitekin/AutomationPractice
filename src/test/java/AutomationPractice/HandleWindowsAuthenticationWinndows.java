@@ -23,6 +23,4 @@ public class HandleWindowsAuthenticationWinndows {
 			Thread.sleep(5000);
 			driver.quit();
 		}
-		
-
 }

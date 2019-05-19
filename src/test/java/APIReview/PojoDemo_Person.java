@@ -22,7 +22,7 @@ public class PojoDemo_Person {
 	public void setUp() {
 		RestAssured.baseURI="https://uinames.com/api";
 	}
-//	@Test
+	@Test
 	public void GAndOMTest1() throws Exception {
 		Person person=new Person();
 		person.setName("Ali");
@@ -47,7 +47,7 @@ public class PojoDemo_Person {
 		System.out.println(backToPersonG.getGender());
 		System.out.println(backToPersonG.getRegion());
 	}
-//	@Test
+	@Test
 	public void GAndOMTest2() throws IOException {
 	Person person =new Person();
 	person.setName("Ali");
@@ -70,7 +70,7 @@ public class PojoDemo_Person {
 	System.out.println(backToPersonG.getRegion());
 	}
 	
-//	@Test
+	@Test
 	public void testWithAPI() throws IOException {
 	Response response=RestAssured.get("");
 	response.then().log().all();

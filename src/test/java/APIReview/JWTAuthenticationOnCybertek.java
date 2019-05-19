@@ -9,7 +9,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class JWTAuthenticationOnCybertek {
-	String token = "10960~O6QUlakiScSFLVQvqnRPPYDBLE1rC2V9N7FZfhyxu9ls7bJdMgnYRaJhNRZ49evM";
+	String token = "10960~iuItVvzg7agKelW9ELrURU8dstPy32PSGBqjQMLEHi2HsW9lcF8yGtfwPwLV5wLd";
 
 	@BeforeClass
 	public void setUp() {
@@ -26,9 +26,11 @@ public class JWTAuthenticationOnCybertek {
 				.get("/courses/129/modules");
 		
 		response.then().statusCode(200);
-
-		System.out.println(response.jsonPath().get("id"));
-		System.out.println(response.jsonPath().get("id[0]"));
+//		response.then().log().all();
+		List<Integer> idsList=response.jsonPath().get("id");
+		int id=response.jsonPath().get("id[0]");
+		System.out.println(idsList);
+		System.out.println(id);
 
 		List<String> modulesList = response.jsonPath().get();
 		for (int i = 0; i < modulesList.size(); i++) {

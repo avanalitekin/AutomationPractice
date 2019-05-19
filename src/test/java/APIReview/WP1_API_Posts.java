@@ -19,7 +19,7 @@ public class WP1_API_Posts {
 		RestAssured.basePath="/wp/v2";
 	}
 	
-//	@Test
+	@Test
 	public void getPostSatusTest() {
 		RestAssured.given().relaxedHTTPSValidation().get("/posts/17").then()
 //		.log()
@@ -27,7 +27,7 @@ public class WP1_API_Posts {
 		.statusCode(200);
 	}
 	
-//	@Test
+	@Test
 	public void verifyBodyTest() {
 		RestAssured.given().relaxedHTTPSValidation()
 //		.log().all()
@@ -39,7 +39,7 @@ public class WP1_API_Posts {
 		.body("author",equalTo(1))
 		.body("status",equalTo("publish"));
 	}
-//	@Test
+	@Test
 	public void testWithHamcrest() {
 		int a=5;
 		int b=6;
@@ -50,19 +50,19 @@ public class WP1_API_Posts {
 		assertThat(b,greaterThan(a));
 		assertThat(c,Matchers.lessThan(b));
 	}
-//	@Test
+	@Test
 	public void ifValidationFailsTest() {
 		RestAssured.given().relaxedHTTPSValidation().queryParam("per_page", 1).get("/posts").then().log().ifValidationFails().statusCode(200)
-		.and().body("id", hasItem(30))
+		.and().body("id", hasItem(39))
 		.body("title.rendered", hasItem("THIS POST COMES AFTER POST 27"));
 	}
 	
-//	@Test
+	@Test
 	public void prettyPrintBody() {
 		RestAssured.given().relaxedHTTPSValidation().get("/posts").prettyPrint();
 	}
 	
-//	@Test
+	@Test
 	public void postTest() {
 		RestAssured.given().relaxedHTTPSValidation().auth().preemptive().basic("avanalitekin", "3mersule")
 		.contentType(ContentType.JSON).when().body("{\r\n" + 
@@ -72,7 +72,7 @@ public class WP1_API_Posts {
 				"	\"status\":\"publish\"\r\n" + 
 				"}").post("/posts").then().statusCode(201);
 	}
-//	@Test
+	@Test
 	public void putTest() {
 		RestAssured.given().relaxedHTTPSValidation().auth().preemptive().basic("avanalitekin", "3mersule").contentType(ContentType.JSON).body("{\r\n" + 
 				"	\"title\":\"Automation post updated\",\r\n" + 
@@ -82,7 +82,7 @@ public class WP1_API_Posts {
 				"}").put("/posts/34").then().statusCode(200);
 	}
 	
-//	@Test
+	@Test
 	public void trashPost() {
 		RestAssured.given().relaxedHTTPSValidation().auth().preemptive().basic("avanalitekin","3mersule").delete("/posts/34")
 		.then().log().all().statusCode(200).and().body("delete", is("true"));

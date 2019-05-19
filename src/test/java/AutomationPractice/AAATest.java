@@ -25,6 +25,7 @@ public class AAATest {
 
 	public static void main(String[] args) {
 		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("https://kcfse.org/");
 		String parentWindow=driver.getWindowHandle();
 		driver.findElement(By.xpath("//*[contains(text(),'ACT')]")).click();

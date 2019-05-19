@@ -3,12 +3,34 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationPractice]">
   <test thread-count="5" name="APITesting(failed)">
     <classes>
-      <class name="APIReview.Pojo_Cybertek_Students">
+      <class name="APIReview.WP1_API_Posts">
         <methods>
-          <include name="allStudentsAPITest"/>
-          <include name="oneStudentAPITest1"/>
+          <include name="deletePost"/>
+          <include name="trashPost"/>
+          <include name="setUp"/>
+          <include name="putTest"/>
+          <include name="ifValidationFailsTest"/>
         </methods>
-      </class> <!-- APIReview.Pojo_Cybertek_Students -->
+      </class> <!-- APIReview.WP1_API_Posts -->
+      <class name="APIReview.JsonPayloadExample">
+        <methods>
+          <include name="setUp"/>
+          <include name="jsonPayLoadTest"/>
+        </methods>
+      </class> <!-- APIReview.JsonPayloadExample -->
+      <class name="APIReview.WPUtilityDemo">
+        <methods>
+          <include name="update_user"/>
+          <include name="setUp"/>
+          <include name="delete_user"/>
+        </methods>
+      </class> <!-- APIReview.WPUtilityDemo -->
+      <class name="APIReview.Pojo_Bookit_Clusters">
+        <methods>
+          <include name="setUp"/>
+          <include name="clusterAPITest"/>
+        </methods>
+      </class> <!-- APIReview.Pojo_Bookit_Clusters -->
       <class name="APIReview.JsonPathDemoBookIt">
         <methods>
           <include name="postTeam"/>
@@ -17,6 +39,26 @@
           <include name="postStudent"/>
         </methods>
       </class> <!-- APIReview.JsonPathDemoBookIt -->
+      <class name="APIReview.ResponseBodyVerification">
+        <methods>
+          <include name="testBody3"/>
+          <include name="setUp"/>
+          <include name="verifyNumberOfResults"/>
+        </methods>
+      </class> <!-- APIReview.ResponseBodyVerification -->
+      <class name="APIReview.StatusCodeValidation">
+        <methods>
+          <include name="testOK"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- APIReview.StatusCodeValidation -->
+      <class name="APIReview.PojoDemo_Person">
+        <methods>
+          <include name="testWithQueryParam"/>
+          <include name="testWithAPI"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- APIReview.PojoDemo_Person -->
     </classes>
   </test> <!-- APITesting(failed) -->
 </suite> <!-- Failed suite [AutomationPractice] -->

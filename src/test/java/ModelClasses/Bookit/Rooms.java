@@ -9,8 +9,6 @@ public class Rooms {
 	int capacity;
 	boolean withTV;
 	boolean withWhiteBoard;
-	
-	
 	public int getId() {
 		return id;
 	}

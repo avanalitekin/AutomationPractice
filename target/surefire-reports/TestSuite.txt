@@ -1,0 +1,114 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 57, Failures: 15, Errors: 0, Skipped: 1, Time elapsed: 44.116 s <<< FAILURE! - in TestSuite
+deletePost(APIReview.WP1_API_Posts)  Time elapsed: 0.759 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at APIReview.WP1_API_Posts.deletePost(WP1_API_Posts.java:94)
+
+ifValidationFailsTest(APIReview.WP1_API_Posts)  Time elapsed: 0.95 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path id doesn't match.
+Expected: a collection containing <39>
+  Actual: [42]
+
+	at APIReview.WP1_API_Posts.ifValidationFailsTest(WP1_API_Posts.java:56)
+
+putTest(APIReview.WP1_API_Posts)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at APIReview.WP1_API_Posts.putTest(WP1_API_Posts.java:82)
+
+trashPost(APIReview.WP1_API_Posts)  Time elapsed: 0.051 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at APIReview.WP1_API_Posts.trashPost(WP1_API_Posts.java:88)
+
+testWithAPI(APIReview.PojoDemo_Person)  Time elapsed: 0.069 s  <<< FAILURE!
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at APIReview.PojoDemo_Person.testWithAPI(PojoDemo_Person.java:79)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at APIReview.PojoDemo_Person.testWithAPI(PojoDemo_Person.java:79)
+
+testWithQueryParam(APIReview.PojoDemo_Person)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at APIReview.PojoDemo_Person.testWithQueryParam(PojoDemo_Person.java:107)
+
+clusterAPITest(APIReview.JsonPathDemoBookIt)  Time elapsed: 0.286 s  <<< FAILURE!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at APIReview.JsonPathDemoBookIt.clusterAPITest(JsonPathDemoBookIt.java:61)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'r', no possible valid JSON value or punctuation could be recognized.
+	at APIReview.JsonPathDemoBookIt.clusterAPITest(JsonPathDemoBookIt.java:61)
+
+postTeam(APIReview.JsonPathDemoBookIt)  Time elapsed: 0.517 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <404>.
+
+	at APIReview.JsonPathDemoBookIt.postTeam(JsonPathDemoBookIt.java:120)
+
+clusterAPITest(APIReview.Pojo_Bookit_Clusters)  Time elapsed: 0.32 s  <<< FAILURE!
+com.fasterxml.jackson.core.JsonParseException: 
+Unrecognized token 'requested': was expecting ('true', 'false' or 'null')
+ at [Source: (String)"requested %s resource was not found."; line: 1, column: 10]
+	at APIReview.Pojo_Bookit_Clusters.clusterAPITest(Pojo_Bookit_Clusters.java:47)
+
+jsonPayLoadTest(APIReview.JsonPayloadExample)  Time elapsed: 0.271 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at APIReview.JsonPayloadExample.jsonPayLoadTest(JsonPayloadExample.java:40)
+
+testBody3(APIReview.ResponseBodyVerification)  Time elapsed: 0.344 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+XML path region doesn't match.
+Expected: is "Mexico"
+  Actual: 404 Not FoundNot FoundThe requested URL /api/wp-json/jwt-auth/v1 was not found on this server.Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.
+
+	at APIReview.ResponseBodyVerification.testBody3(ResponseBodyVerification.java:50)
+
+verifyNumberOfResults(APIReview.ResponseBodyVerification)  Time elapsed: 0.331 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+XML path $ doesn't match.
+Expected: a collection with size <2>
+  Actual: 404 Not FoundNot FoundThe requested URL /api/wp-json/jwt-auth/v1 was not found on this server.Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.
+
+	at APIReview.ResponseBodyVerification.verifyNumberOfResults(ResponseBodyVerification.java:65)
+
+testOK(APIReview.StatusCodeValidation)  Time elapsed: 0.401 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at APIReview.StatusCodeValidation.testOK(StatusCodeValidation.java:23)
+
+update_user(APIReview.WPUtilityDemo)  Time elapsed: 0.908 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <403>.
+
+	at APIReview.WPUtilityDemo.update_user(WPUtilityDemo.java:33)
+
+delete_user(APIReview.WPUtilityDemo)  Time elapsed: 0.422 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <403>.
+
+	at APIReview.WPUtilityDemo.delete_user(WPUtilityDemo.java:38)
+
