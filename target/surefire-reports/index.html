@@ -418,238 +418,6 @@
           <div class="suite-AutomationPractice-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">APIReview.WPUtilityDemo</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="delete_user">
-                  </a> <!-- delete_user -->
-                  <span class="method-name">delete_user</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;403&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
-	at utilities.WPUtility.delete_User(WPUtility.java:81)
-	at APIReview.WPUtilityDemo.delete_user(WPUtilityDemo.java:38)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="update_user">
-                  </a> <!-- update_user -->
-                  <span class="method-name">update_user</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;403&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
-	at utilities.WPUtility.update_User(WPUtility.java:64)
-	at APIReview.WPUtilityDemo.update_user(WPUtilityDemo.java:33)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-failed -->
-          <div class="suite-AutomationPractice-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">APIReview.Pojo_Bookit_Clusters</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="clusterAPITest">
-                  </a> <!-- clusterAPITest -->
-                  <span class="method-name">clusterAPITest</span>
-                  <div class="stack-trace">com.fasterxml.jackson.core.JsonParseException: Unrecognized token &apos;requested&apos;: was expecting (&apos;true&apos;, &apos;false&apos; or &apos;null&apos;)
- at [Source: (String)&quot;requested %s resource was not found.&quot;; line: 1, column: 10]
-	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:703)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2853)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1899)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:757)
-	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
-	at APIReview.Pojo_Bookit_Clusters.clusterAPITest(Pojo_Bookit_Clusters.java:47)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-failed -->
-          <div class="suite-AutomationPractice-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">APIReview.JsonPayloadExample</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="jsonPayLoadTest">
-                  </a> <!-- jsonPayLoadTest -->
-                  <span class="method-name">jsonPayLoadTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
-	at APIReview.JsonPayloadExample.jsonPayLoadTest(JsonPayloadExample.java:40)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-failed -->
-          <div class="suite-AutomationPractice-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">APIReview.JsonPathDemoBookIt</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="clusterAPITest">
-                  </a> <!-- clusterAPITest -->
-                  <span class="method-name">clusterAPITest</span>
-                  <div class="stack-trace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:986)
-	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:951)
-	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1031)
-	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at io.restassured.path.json.JsonPath.getMap(JsonPath.java:434)
-	at APIReview.JsonPathDemoBookIt.clusterAPITest(JsonPathDemoBookIt.java:61)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;r&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:87)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:949)
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:984)
-	... 34 more
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="postTeam">
-                  </a> <!-- postTeam -->
-                  <span class="method-name">postTeam</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;201&gt; but was &lt;404&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
-	at APIReview.JsonPathDemoBookIt.postTeam(JsonPathDemoBookIt.java:120)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-failed -->
-          <div class="suite-AutomationPractice-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">APIReview.PojoDemo_Person</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWithAPI">
-                  </a> <!-- testWithAPI -->
-                  <span class="method-name">testWithAPI</span>
-                  <div class="stack-trace">com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at APIReview.PojoDemo_Person.testWithAPI(PojoDemo_Person.java:79)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	... 34 more
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWithQueryParam">
-                  </a> <!-- testWithQueryParam -->
-                  <span class="method-name">testWithQueryParam</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
-	at APIReview.PojoDemo_Person.testWithQueryParam(PojoDemo_Person.java:107)
-... Removed 39 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-failed -->
-          <div class="suite-AutomationPractice-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">APIReview.WP1_API_Posts</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -696,7 +464,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
                   <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
 JSON path id doesn&apos;t match.
 Expected: a collection containing &lt;39&gt;
-  Actual: [42]
+  Actual: [44]
 
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
@@ -843,6 +611,119 @@ error was encountered while trying to use an ErrorDocument to handle the request
           <div class="suite-AutomationPractice-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">APIReview.PojoDemo_Person</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithAPI">
+                  </a> <!-- testWithAPI -->
+                  <span class="method-name">testWithAPI</span>
+                  <div class="stack-trace">com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
+	at com.google.gson.Gson.fromJson(Gson.java:927)
+	at com.google.gson.Gson.fromJson(Gson.java:892)
+	at com.google.gson.Gson.fromJson(Gson.java:841)
+	at com.google.gson.Gson.fromJson(Gson.java:813)
+	at APIReview.PojoDemo_Person.testWithAPI(PojoDemo_Person.java:79)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
+	... 34 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithQueryParam">
+                  </a> <!-- testWithQueryParam -->
+                  <span class="method-name">testWithQueryParam</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at APIReview.PojoDemo_Person.testWithQueryParam(PojoDemo_Person.java:107)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-failed -->
+          <div class="suite-AutomationPractice-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">APIReview.WPUtilityDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete_user">
+                  </a> <!-- delete_user -->
+                  <span class="method-name">delete_user</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;403&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at utilities.WPUtility.delete_User(WPUtility.java:81)
+	at APIReview.WPUtilityDemo.delete_user(WPUtilityDemo.java:38)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="update_user">
+                  </a> <!-- update_user -->
+                  <span class="method-name">update_user</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;403&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at utilities.WPUtility.update_User(WPUtility.java:64)
+	at APIReview.WPUtilityDemo.update_user(WPUtilityDemo.java:33)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-failed -->
+          <div class="suite-AutomationPractice-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">APIReview.StatusCodeValidation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -873,6 +754,125 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-AutomationPractice-class-failed -->
+          <div class="suite-AutomationPractice-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">APIReview.JsonPayloadExample</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="jsonPayLoadTest">
+                  </a> <!-- jsonPayLoadTest -->
+                  <span class="method-name">jsonPayLoadTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at APIReview.JsonPayloadExample.jsonPayLoadTest(JsonPayloadExample.java:40)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-failed -->
+          <div class="suite-AutomationPractice-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">APIReview.Pojo_Bookit_Clusters</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clusterAPITest">
+                  </a> <!-- clusterAPITest -->
+                  <span class="method-name">clusterAPITest</span>
+                  <div class="stack-trace">com.fasterxml.jackson.core.JsonParseException: Unrecognized token &apos;requested&apos;: was expecting (&apos;true&apos;, &apos;false&apos; or &apos;null&apos;)
+ at [Source: (String)&quot;requested %s resource was not found.&quot;; line: 1, column: 10]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:703)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2853)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1899)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:757)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at APIReview.Pojo_Bookit_Clusters.clusterAPITest(Pojo_Bookit_Clusters.java:47)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-failed -->
+          <div class="suite-AutomationPractice-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">APIReview.JsonPathDemoBookIt</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clusterAPITest">
+                  </a> <!-- clusterAPITest -->
+                  <span class="method-name">clusterAPITest</span>
+                  <div class="stack-trace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:986)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:951)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1031)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getMap(JsonPath.java:434)
+	at APIReview.JsonPathDemoBookIt.clusterAPITest(JsonPathDemoBookIt.java:61)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;r&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:87)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:949)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:984)
+	... 34 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTeam">
+                  </a> <!-- postTeam -->
+                  <span class="method-name">postTeam</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at APIReview.JsonPathDemoBookIt.postTeam(JsonPathDemoBookIt.java:120)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-failed -->
           <div class="suite-AutomationPractice-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -884,13 +884,35 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
                   <a name="postStudent">
                   </a> <!-- postStudent -->
                   <span class="method-name">postStudent</span>
-                  <div class="stack-trace">java.lang.Throwable: Method JsonPathDemoBookIt.postStudent()[pri:0, instance:APIReview.JsonPathDemoBookIt@2357d90a] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method JsonPathDemoBookIt.postStudent()[pri:0, instance:APIReview.JsonPathDemoBookIt@7f9fcf7f] depends on not successfully finished methods
 ... Removed 22 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-AutomationPractice-class-skipped -->
+          <div class="suite-AutomationPractice-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APIReview.Pojo_Cybertek_Students</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="allStudentsAPITest">
+                  </a> <!-- allStudentsAPITest -->
+                  <span class="method-name">allStudentsAPITest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="oneStudentAPITest1">
+                  </a> <!-- oneStudentAPITest1 -->
+                  <span class="method-name">oneStudentAPITest1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-passed -->
           <div class="suite-AutomationPractice-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -909,198 +931,14 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
           <div class="suite-AutomationPractice-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">APIReview.Pojo_Cybertek_Instructors</span>
+              <span class="class-name">APIReview.MatcherAssert_MatchersDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="allInstructorTest">
-                  </a> <!-- allInstructorTest -->
-                  <span class="method-name">allInstructorTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="oneInstructorTest">
-                  </a> <!-- oneInstructorTest -->
-                  <span class="method-name">oneInstructorTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-passed -->
-          <div class="suite-AutomationPractice-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">APIReview.WP1_Map_Pojo_InsteadOfJsonPath</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="post_User_With_PojoClass">
-                  </a> <!-- post_User_With_PojoClass -->
-                  <span class="method-name">post_User_With_PojoClass</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-passed -->
-          <div class="suite-AutomationPractice-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">APIReview.Pojo_JsonPathDemo_Drivers</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="driverTestWithPojo">
-                  </a> <!-- driverTestWithPojo -->
-                  <span class="method-name">driverTestWithPojo</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="driversTestWithJsonPath">
-                  </a> <!-- driversTestWithJsonPath -->
-                  <span class="method-name">driversTestWithJsonPath</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="personTest">
-                  </a> <!-- personTest -->
-                  <span class="method-name">personTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testString">
-                  </a> <!-- testString -->
-                  <span class="method-name">testString</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-passed -->
-          <div class="suite-AutomationPractice-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">APIReview.LoginDemo</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="userNamePasswordTest">
-                  </a> <!-- userNamePasswordTest -->
-                  <span class="method-name">userNamePasswordTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-passed -->
-          <div class="suite-AutomationPractice-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">APIReview.JsonConversion</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="convertXMLToJson">
-                  </a> <!-- convertXMLToJson -->
-                  <span class="method-name">convertXMLToJson</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-passed -->
-          <div class="suite-AutomationPractice-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">APIReview.RestAssuredLoggingDemo</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="logginTest">
-                  </a> <!-- logginTest -->
-                  <span class="method-name">logginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-passed -->
-          <div class="suite-AutomationPractice-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">APIReview.PojoDemo_Person</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="GAndOMTest1">
-                  </a> <!-- GAndOMTest1 -->
-                  <span class="method-name">GAndOMTest1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="GAndOMTest2">
-                  </a> <!-- GAndOMTest2 -->
-                  <span class="method-name">GAndOMTest2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-passed -->
-          <div class="suite-AutomationPractice-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">APIReview.ResponseBodyVerification</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testBody">
-                  </a> <!-- testBody -->
-                  <span class="method-name">testBody</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testBody2">
-                  </a> <!-- testBody2 -->
-                  <span class="method-name">testBody2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-passed -->
-          <div class="suite-AutomationPractice-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">APIReview.GetAPIData</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testAPIData1">
-                  </a> <!-- testAPIData1 -->
-                  <span class="method-name">testAPIData1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testAPIData2">
-                  </a> <!-- testAPIData2 -->
-                  <span class="method-name">testAPIData2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationPractice-class-passed -->
-          <div class="suite-AutomationPractice-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">APIReview.WP1_API_Users</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="user_cannot_see_other_user_info">
-                  </a> <!-- user_cannot_see_other_user_info -->
-                  <span class="method-name">user_cannot_see_other_user_info</span>
+                  <a name="matcherAssert_Matchers_Test">
+                  </a> <!-- matcherAssert_Matchers_Test -->
+                  <span class="method-name">matcherAssert_Matchers_Test</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1151,28 +989,42 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
           <div class="suite-AutomationPractice-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">APIReview.JWTAuthentication01</span>
+              <span class="class-name">APIReview.JsonPathDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getToken">
-                  </a> <!-- getToken -->
-                  <span class="method-name">getToken</span>
+                  <a name="driverInfo">
+                  </a> <!-- driverInfo -->
+                  <span class="method-name">driverInfo</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="postPostsWithToken">
-                  </a> <!-- postPostsWithToken -->
-                  <span class="method-name">postPostsWithToken</span>
+                  <a name="driverInfo2">
+                  </a> <!-- driverInfo2 -->
+                  <span class="method-name">driverInfo2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="postUserWithJWT">
-                  </a> <!-- postUserWithJWT -->
-                  <span class="method-name">postUserWithJWT</span>
+                  <a name="driverInfo3">
+                  </a> <!-- driverInfo3 -->
+                  <span class="method-name">driverInfo3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="instructorAll">
+                  </a> <!-- instructorAll -->
+                  <span class="method-name">instructorAll</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="instructorOne">
+                  </a> <!-- instructorOne -->
+                  <span class="method-name">instructorOne</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1180,14 +1032,81 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
           <div class="suite-AutomationPractice-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">APIReview.MatcherAssert_MatchersDemo</span>
+              <span class="class-name">APIReview.Pojo_Cybertek_Instructors</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="matcherAssert_Matchers_Test">
-                  </a> <!-- matcherAssert_Matchers_Test -->
-                  <span class="method-name">matcherAssert_Matchers_Test</span>
+                  <a name="allInstructorTest">
+                  </a> <!-- allInstructorTest -->
+                  <span class="method-name">allInstructorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="oneInstructorTest">
+                  </a> <!-- oneInstructorTest -->
+                  <span class="method-name">oneInstructorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-passed -->
+          <div class="suite-AutomationPractice-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APIReview.ResponseManipulation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getWP1PostsTests">
+                  </a> <!-- getWP1PostsTests -->
+                  <span class="method-name">getWP1PostsTests</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-passed -->
+          <div class="suite-AutomationPractice-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APIReview.JsonConversion</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="convertXMLToJson">
+                  </a> <!-- convertXMLToJson -->
+                  <span class="method-name">convertXMLToJson</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-passed -->
+          <div class="suite-AutomationPractice-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APIReview.LoginDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userNamePasswordTest">
+                  </a> <!-- userNamePasswordTest -->
+                  <span class="method-name">userNamePasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-passed -->
+          <div class="suite-AutomationPractice-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APIReview.WP1_Map_Pojo_InsteadOfJsonPath</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="post_User_With_PojoClass">
+                  </a> <!-- post_User_With_PojoClass -->
+                  <span class="method-name">post_User_With_PojoClass</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1238,14 +1157,21 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
           <div class="suite-AutomationPractice-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">APIReview.ResponseManipulation</span>
+              <span class="class-name">APIReview.ResponseBodyVerification</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getWP1PostsTests">
-                  </a> <!-- getWP1PostsTests -->
-                  <span class="method-name">getWP1PostsTests</span>
+                  <a name="testBody">
+                  </a> <!-- testBody -->
+                  <span class="method-name">testBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBody2">
+                  </a> <!-- testBody2 -->
+                  <span class="method-name">testBody2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1253,42 +1179,21 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
           <div class="suite-AutomationPractice-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">APIReview.JsonPathDemo</span>
+              <span class="class-name">APIReview.PojoDemo_Person</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="driverInfo">
-                  </a> <!-- driverInfo -->
-                  <span class="method-name">driverInfo</span>
+                  <a name="GAndOMTest1">
+                  </a> <!-- GAndOMTest1 -->
+                  <span class="method-name">GAndOMTest1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="driverInfo2">
-                  </a> <!-- driverInfo2 -->
-                  <span class="method-name">driverInfo2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="driverInfo3">
-                  </a> <!-- driverInfo3 -->
-                  <span class="method-name">driverInfo3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="instructorAll">
-                  </a> <!-- instructorAll -->
-                  <span class="method-name">instructorAll</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="instructorOne">
-                  </a> <!-- instructorOne -->
-                  <span class="method-name">instructorOne</span>
+                  <a name="GAndOMTest2">
+                  </a> <!-- GAndOMTest2 -->
+                  <span class="method-name">GAndOMTest2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1311,21 +1216,116 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
           <div class="suite-AutomationPractice-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">APIReview.Pojo_Cybertek_Students</span>
+              <span class="class-name">APIReview.JWTAuthentication01</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="allStudentsAPITest">
-                  </a> <!-- allStudentsAPITest -->
-                  <span class="method-name">allStudentsAPITest</span>
+                  <a name="getToken">
+                  </a> <!-- getToken -->
+                  <span class="method-name">getToken</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="oneStudentAPITest1">
-                  </a> <!-- oneStudentAPITest1 -->
-                  <span class="method-name">oneStudentAPITest1</span>
+                  <a name="postPostsWithToken">
+                  </a> <!-- postPostsWithToken -->
+                  <span class="method-name">postPostsWithToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postUserWithJWT">
+                  </a> <!-- postUserWithJWT -->
+                  <span class="method-name">postUserWithJWT</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-passed -->
+          <div class="suite-AutomationPractice-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APIReview.GetAPIData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAPIData1">
+                  </a> <!-- testAPIData1 -->
+                  <span class="method-name">testAPIData1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAPIData2">
+                  </a> <!-- testAPIData2 -->
+                  <span class="method-name">testAPIData2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-passed -->
+          <div class="suite-AutomationPractice-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APIReview.WP1_API_Users</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_cannot_see_other_user_info">
+                  </a> <!-- user_cannot_see_other_user_info -->
+                  <span class="method-name">user_cannot_see_other_user_info</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-passed -->
+          <div class="suite-AutomationPractice-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APIReview.RestAssuredLoggingDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logginTest">
+                  </a> <!-- logginTest -->
+                  <span class="method-name">logginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPractice-class-passed -->
+          <div class="suite-AutomationPractice-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APIReview.Pojo_JsonPathDemo_Drivers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="driverTestWithPojo">
+                  </a> <!-- driverTestWithPojo -->
+                  <span class="method-name">driverTestWithPojo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="driversTestWithJsonPath">
+                  </a> <!-- driversTestWithJsonPath -->
+                  <span class="method-name">driversTestWithJsonPath</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="personTest">
+                  </a> <!-- personTest -->
+                  <span class="method-name">personTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testString">
+                  </a> <!-- testString -->
+                  <span class="method-name">testString</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1411,217 +1411,217 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(57);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'driverInfo2')
-data.setCell(0, 2, 'APIReview.JsonPathDemo')
-data.setCell(0, 3, 4937);
+data.setCell(0, 1, 'logginTest')
+data.setCell(0, 2, 'APIReview.RestAssuredLoggingDemo')
+data.setCell(0, 3, 4553);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'logginTest')
-data.setCell(1, 2, 'APIReview.RestAssuredLoggingDemo')
-data.setCell(1, 3, 3814);
+data.setCell(1, 1, 'driverInfo2')
+data.setCell(1, 2, 'APIReview.JsonPathDemo')
+data.setCell(1, 3, 3287);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'post_User_With_PojoClass')
 data.setCell(2, 2, 'APIReview.WP1_Map_Pojo_InsteadOfJsonPath')
-data.setCell(2, 3, 2511);
+data.setCell(2, 3, 2548);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testAPIData1')
 data.setCell(3, 2, 'APIReview.GetAPIData')
-data.setCell(3, 3, 2237);
+data.setCell(3, 3, 2380);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'driversTestWithJsonPath')
-data.setCell(4, 2, 'APIReview.Pojo_JsonPathDemo_Drivers')
-data.setCell(4, 3, 1743);
+data.setCell(4, 1, 'testAPIData2')
+data.setCell(4, 2, 'APIReview.GetAPIData')
+data.setCell(4, 3, 1517);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testAPIData2')
-data.setCell(5, 2, 'APIReview.GetAPIData')
-data.setCell(5, 3, 1443);
+data.setCell(5, 1, 'prettyPrintBody')
+data.setCell(5, 2, 'APIReview.WP1_API_Posts')
+data.setCell(5, 3, 1272);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'prettyPrintBody')
-data.setCell(6, 2, 'APIReview.WP1_API_Posts')
-data.setCell(6, 3, 1273);
+data.setCell(6, 1, 'update_user')
+data.setCell(6, 2, 'APIReview.WPUtilityDemo')
+data.setCell(6, 3, 883);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'coursesModulesTest')
-data.setCell(7, 2, 'APIReview.JWTAuthenticationOnCybertek')
-data.setCell(7, 3, 975);
+data.setCell(7, 1, 'create_user_with_role')
+data.setCell(7, 2, 'APIReview.WPUtilityDemo')
+data.setCell(7, 3, 849);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'update_user')
-data.setCell(8, 2, 'APIReview.WPUtilityDemo')
-data.setCell(8, 3, 863);
+data.setCell(8, 1, 'coursesModulesTest')
+data.setCell(8, 2, 'APIReview.JWTAuthenticationOnCybertek')
+data.setCell(8, 3, 785);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testWithAPI')
-data.setCell(9, 2, 'APIReview.PojoDemo_Person')
-data.setCell(9, 3, 816);
+data.setCell(9, 1, 'postPostsWithToken')
+data.setCell(9, 2, 'APIReview.JWTAuthentication01')
+data.setCell(9, 3, 774);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'postTest')
-data.setCell(10, 2, 'APIReview.WP1_API_Posts')
-data.setCell(10, 3, 801);
+data.setCell(10, 1, 'jsonPayLoadTest')
+data.setCell(10, 2, 'APIReview.JsonPayloadExample')
+data.setCell(10, 3, 746);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'getWP1PostsTests')
 data.setCell(11, 2, 'APIReview.ResponseManipulation')
-data.setCell(11, 3, 784);
+data.setCell(11, 3, 745);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'postPostsWithToken')
-data.setCell(12, 2, 'APIReview.JWTAuthentication01')
-data.setCell(12, 3, 762);
+data.setCell(12, 1, 'testWithAPI')
+data.setCell(12, 2, 'APIReview.PojoDemo_Person')
+data.setCell(12, 3, 740);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'deletePost')
 data.setCell(13, 2, 'APIReview.WP1_API_Posts')
-data.setCell(13, 3, 750);
+data.setCell(13, 3, 727);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'create_user_with_role')
-data.setCell(14, 2, 'APIReview.WPUtilityDemo')
-data.setCell(14, 3, 699);
+data.setCell(14, 1, 'cgetAmountAndRegionTest')
+data.setCell(14, 2, 'APIReview.QueryParameterDemo')
+data.setCell(14, 3, 718);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'dgetAmountAndRegionGenderTest')
-data.setCell(15, 2, 'APIReview.QueryParameterDemo')
-data.setCell(15, 3, 698);
+data.setCell(15, 1, 'postTest')
+data.setCell(15, 2, 'APIReview.WP1_API_Posts')
+data.setCell(15, 3, 716);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'cgetAmountAndRegionTest')
+data.setCell(16, 1, 'bgetRegionNameTest')
 data.setCell(16, 2, 'APIReview.QueryParameterDemo')
-data.setCell(16, 3, 692);
+data.setCell(16, 3, 713);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'agetCityNameTest')
 data.setCell(17, 2, 'APIReview.QueryParameterDemo')
-data.setCell(17, 3, 688);
+data.setCell(17, 3, 692);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'bgetRegionNameTest')
+data.setCell(18, 1, 'dgetAmountAndRegionGenderTest')
 data.setCell(18, 2, 'APIReview.QueryParameterDemo')
-data.setCell(18, 3, 687);
+data.setCell(18, 3, 690);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'postUserWithJWT')
 data.setCell(19, 2, 'APIReview.JWTAuthentication01')
-data.setCell(19, 3, 650);
+data.setCell(19, 3, 634);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'verifyBodyTest')
-data.setCell(20, 2, 'APIReview.WP1_API_Posts')
-data.setCell(20, 3, 621);
+data.setCell(20, 1, 'postTeam')
+data.setCell(20, 2, 'APIReview.JsonPathDemoBookIt')
+data.setCell(20, 3, 625);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'jsonPayLoadTest')
-data.setCell(21, 2, 'APIReview.JsonPayloadExample')
-data.setCell(21, 3, 616);
+data.setCell(21, 1, 'ifValidationFailsTest')
+data.setCell(21, 2, 'APIReview.WP1_API_Posts')
+data.setCell(21, 3, 619);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'ifValidationFailsTest')
-data.setCell(22, 2, 'APIReview.WP1_API_Posts')
-data.setCell(22, 3, 615);
+data.setCell(22, 1, 'getToken')
+data.setCell(22, 2, 'APIReview.JWTAuthentication01')
+data.setCell(22, 3, 547);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'putTest')
+data.setCell(23, 1, 'getPostSatusTest')
 data.setCell(23, 2, 'APIReview.WP1_API_Posts')
-data.setCell(23, 3, 569);
+data.setCell(23, 3, 527);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'trashPost')
+data.setCell(24, 1, 'putTest')
 data.setCell(24, 2, 'APIReview.WP1_API_Posts')
-data.setCell(24, 3, 550);
+data.setCell(24, 3, 501);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'user_cannot_see_other_user_info')
-data.setCell(25, 2, 'APIReview.WP1_API_Users')
-data.setCell(25, 3, 526);
+data.setCell(25, 1, 'verifyBodyTest')
+data.setCell(25, 2, 'APIReview.WP1_API_Posts')
+data.setCell(25, 3, 498);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'postTeam')
-data.setCell(26, 2, 'APIReview.JsonPathDemoBookIt')
-data.setCell(26, 3, 517);
+data.setCell(26, 1, 'driverInfo3')
+data.setCell(26, 2, 'APIReview.JsonPathDemo')
+data.setCell(26, 3, 490);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'getPostSatusTest')
-data.setCell(27, 2, 'APIReview.WP1_API_Posts')
-data.setCell(27, 3, 515);
+data.setCell(27, 1, 'user_cannot_see_other_user_info')
+data.setCell(27, 2, 'APIReview.WP1_API_Users')
+data.setCell(27, 3, 459);
 data.setCell(28, 0, 28)
 data.setCell(28, 1, 'testBody')
 data.setCell(28, 2, 'APIReview.ResponseBodyVerification')
-data.setCell(28, 3, 440);
+data.setCell(28, 3, 439);
 data.setCell(29, 0, 29)
 data.setCell(29, 1, 'driverInfo')
 data.setCell(29, 2, 'APIReview.JsonPathDemo')
-data.setCell(29, 3, 418);
+data.setCell(29, 3, 427);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'getToken')
-data.setCell(30, 2, 'APIReview.JWTAuthentication01')
-data.setCell(30, 3, 415);
+data.setCell(30, 1, 'trashPost')
+data.setCell(30, 2, 'APIReview.WP1_API_Posts')
+data.setCell(30, 3, 421);
 data.setCell(31, 0, 31)
 data.setCell(31, 1, 'delete_user')
 data.setCell(31, 2, 'APIReview.WPUtilityDemo')
-data.setCell(31, 3, 375);
+data.setCell(31, 3, 387);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'driverInfo3')
-data.setCell(32, 2, 'APIReview.JsonPathDemo')
-data.setCell(32, 3, 364);
+data.setCell(32, 1, 'amountAndRegionTest')
+data.setCell(32, 2, 'APIReview.QueryParameterDemo')
+data.setCell(32, 3, 361);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'testOK')
-data.setCell(33, 2, 'APIReview.StatusCodeValidation')
-data.setCell(33, 3, 352);
+data.setCell(33, 1, 'testWithQueryParam')
+data.setCell(33, 2, 'APIReview.PojoDemo_Person')
+data.setCell(33, 3, 354);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'testWithQueryParam')
-data.setCell(34, 2, 'APIReview.PojoDemo_Person')
-data.setCell(34, 3, 344);
+data.setCell(34, 1, 'testOK')
+data.setCell(34, 2, 'APIReview.StatusCodeValidation')
+data.setCell(34, 3, 345);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'testBody3')
+data.setCell(35, 1, 'verifyNumberOfResults')
 data.setCell(35, 2, 'APIReview.ResponseBodyVerification')
-data.setCell(35, 3, 344);
+data.setCell(35, 3, 331);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'amountAndRegionTest')
-data.setCell(36, 2, 'APIReview.QueryParameterDemo')
-data.setCell(36, 3, 335);
+data.setCell(36, 1, 'testBody2')
+data.setCell(36, 2, 'APIReview.ResponseBodyVerification')
+data.setCell(36, 3, 330);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'testBody2')
+data.setCell(37, 1, 'testBody3')
 data.setCell(37, 2, 'APIReview.ResponseBodyVerification')
 data.setCell(37, 3, 330);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'verifyNumberOfResults')
-data.setCell(38, 2, 'APIReview.ResponseBodyVerification')
-data.setCell(38, 3, 330);
+data.setCell(38, 1, 'driversTestWithJsonPath')
+data.setCell(38, 2, 'APIReview.Pojo_JsonPathDemo_Drivers')
+data.setCell(38, 3, 329);
 data.setCell(39, 0, 39)
 data.setCell(39, 1, 'userNamePasswordTest')
 data.setCell(39, 2, 'APIReview.LoginDemo')
-data.setCell(39, 3, 324);
+data.setCell(39, 3, 326);
 data.setCell(40, 0, 40)
 data.setCell(40, 1, 'clusterAPITest')
 data.setCell(40, 2, 'APIReview.Pojo_Bookit_Clusters')
-data.setCell(40, 3, 318);
+data.setCell(40, 3, 307);
 data.setCell(41, 0, 41)
 data.setCell(41, 1, 'driverTestWithPojo')
 data.setCell(41, 2, 'APIReview.Pojo_JsonPathDemo_Drivers')
-data.setCell(41, 3, 297);
+data.setCell(41, 3, 303);
 data.setCell(42, 0, 42)
 data.setCell(42, 1, 'clusterAPITest')
 data.setCell(42, 2, 'APIReview.JsonPathDemoBookIt')
-data.setCell(42, 3, 286);
+data.setCell(42, 3, 302);
 data.setCell(43, 0, 43)
 data.setCell(43, 1, 'instructorAll')
 data.setCell(43, 2, 'APIReview.JsonPathDemo')
-data.setCell(43, 3, 250);
+data.setCell(43, 3, 292);
 data.setCell(44, 0, 44)
 data.setCell(44, 1, 'allStudentsAPITest')
 data.setCell(44, 2, 'APIReview.Pojo_Cybertek_Students')
-data.setCell(44, 3, 248);
+data.setCell(44, 3, 243);
 data.setCell(45, 0, 45)
 data.setCell(45, 1, 'allInstructorTest')
 data.setCell(45, 2, 'APIReview.Pojo_Cybertek_Instructors')
-data.setCell(45, 3, 187);
+data.setCell(45, 3, 230);
 data.setCell(46, 0, 46)
 data.setCell(46, 1, 'instructorOne')
 data.setCell(46, 2, 'APIReview.JsonPathDemo')
-data.setCell(46, 3, 151);
+data.setCell(46, 3, 166);
 data.setCell(47, 0, 47)
-data.setCell(47, 1, 'oneStudentAPITest1')
-data.setCell(47, 2, 'APIReview.Pojo_Cybertek_Students')
-data.setCell(47, 3, 114);
+data.setCell(47, 1, 'oneInstructorTest')
+data.setCell(47, 2, 'APIReview.Pojo_Cybertek_Instructors')
+data.setCell(47, 3, 119);
 data.setCell(48, 0, 48)
-data.setCell(48, 1, 'oneInstructorTest')
-data.setCell(48, 2, 'APIReview.Pojo_Cybertek_Instructors')
-data.setCell(48, 3, 110);
+data.setCell(48, 1, 'oneStudentAPITest1')
+data.setCell(48, 2, 'APIReview.Pojo_Cybertek_Students')
+data.setCell(48, 3, 113);
 data.setCell(49, 0, 49)
 data.setCell(49, 1, 'GAndOMTest1')
 data.setCell(49, 2, 'APIReview.PojoDemo_Person')
-data.setCell(49, 3, 91);
+data.setCell(49, 3, 85);
 data.setCell(50, 0, 50)
 data.setCell(50, 1, 'convertXMLToJson')
 data.setCell(50, 2, 'APIReview.JsonConversion')
-data.setCell(50, 3, 15);
+data.setCell(50, 3, 12);
 data.setCell(51, 0, 51)
 data.setCell(51, 1, 'matcherAssert_Matchers_Test')
 data.setCell(51, 2, 'APIReview.MatcherAssert_MatchersDemo')
-data.setCell(51, 3, 5);
+data.setCell(51, 3, 7);
 data.setCell(52, 0, 52)
 data.setCell(52, 1, 'personTest')
 data.setCell(52, 2, 'APIReview.Pojo_JsonPathDemo_Drivers')
-data.setCell(52, 3, 3);
+data.setCell(52, 3, 4);
 data.setCell(53, 0, 53)
 data.setCell(53, 1, 'GAndOMTest2')
 data.setCell(53, 2, 'APIReview.PojoDemo_Person')
@@ -1629,7 +1629,7 @@ data.setCell(53, 3, 3);
 data.setCell(54, 0, 54)
 data.setCell(54, 1, 'testWithHamcrest')
 data.setCell(54, 2, 'APIReview.WP1_API_Posts')
-data.setCell(54, 3, 3);
+data.setCell(54, 3, 2);
 data.setCell(55, 0, 55)
 data.setCell(55, 1, 'testString')
 data.setCell(55, 2, 'APIReview.Pojo_JsonPathDemo_Drivers')
@@ -1637,12 +1637,12 @@ data.setCell(55, 3, 2);
 data.setCell(56, 0, 56)
 data.setCell(56, 1, 'postStudent')
 data.setCell(56, 2, 'APIReview.JsonPathDemoBookIt')
-data.setCell(56, 3, 1);
+data.setCell(56, 3, 0);
 window.suiteTableData['AutomationPractice']= { tableData: data, tableDiv: 'times-div-AutomationPractice'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-AutomationPractice">
               </div> <!-- times-div-AutomationPractice -->
             </div> <!-- times-div -->
@@ -1675,358 +1675,358 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testAPIData2</span>
-                <span class="method-start">2238 ms</span>
+                <span class="method-start">2382 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.LoginDemo</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">userNamePasswordTest</span>
-                <span class="method-start">3681 ms</span>
+                <span class="method-start">3899 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.WP1_API_Posts</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4005 ms</span>
+                <span class="method-start">4225 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">deletePost</span>
-                <span class="method-start">4006 ms</span>
+                <span class="method-start">4226 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getPostSatusTest</span>
-                <span class="method-start">4766 ms</span>
+                <span class="method-start">4966 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ifValidationFailsTest</span>
-                <span class="method-start">5282 ms</span>
+                <span class="method-start">5493 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">postTest</span>
-                <span class="method-start">5897 ms</span>
+                <span class="method-start">6113 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">prettyPrintBody</span>
-                <span class="method-start">6698 ms</span>
+                <span class="method-start">6830 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">putTest</span>
-                <span class="method-start">7972 ms</span>
+                <span class="method-start">8102 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testWithHamcrest</span>
-                <span class="method-start">8542 ms</span>
+                <span class="method-start">8604 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">trashPost</span>
-                <span class="method-start">8545 ms</span>
+                <span class="method-start">8606 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyBodyTest</span>
-                <span class="method-start">9096 ms</span>
+                <span class="method-start">9027 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.JsonConversion</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">convertXMLToJson</span>
-                <span class="method-start">9722 ms</span>
+                <span class="method-start">9529 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.MatcherAssert_MatchersDemo</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">matcherAssert_Matchers_Test</span>
-                <span class="method-start">9737 ms</span>
+                <span class="method-start">9541 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.WP1_API_Users</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9742 ms</span>
+                <span class="method-start">9548 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">user_cannot_see_other_user_info</span>
-                <span class="method-start">9743 ms</span>
+                <span class="method-start">9548 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.JsonPathDemo</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">driverInfo</span>
-                <span class="method-start">10270 ms</span>
+                <span class="method-start">10008 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">driverInfo2</span>
-                <span class="method-start">10688 ms</span>
+                <span class="method-start">10435 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">driverInfo3</span>
-                <span class="method-start">15625 ms</span>
+                <span class="method-start">13722 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">instructorAll</span>
-                <span class="method-start">15990 ms</span>
+                <span class="method-start">14212 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">instructorOne</span>
-                <span class="method-start">16241 ms</span>
+                <span class="method-start">14505 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.PojoDemo_Person</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">16393 ms</span>
+                <span class="method-start">14671 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">GAndOMTest1</span>
-                <span class="method-start">16393 ms</span>
+                <span class="method-start">14671 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GAndOMTest2</span>
-                <span class="method-start">16485 ms</span>
+                <span class="method-start">14756 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testWithAPI</span>
-                <span class="method-start">16488 ms</span>
+                <span class="method-start">14759 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testWithQueryParam</span>
-                <span class="method-start">17305 ms</span>
+                <span class="method-start">15500 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.WP1_Map_Pojo_InsteadOfJsonPath</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">17649 ms</span>
+                <span class="method-start">15855 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">post_User_With_PojoClass</span>
-                <span class="method-start">17649 ms</span>
+                <span class="method-start">15856 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.JsonPathDemoBookIt</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">20161 ms</span>
+                <span class="method-start">18406 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">clusterAPITest</span>
-                <span class="method-start">21963 ms</span>
+                <span class="method-name">postTeam</span>
+                <span class="method-start">20021 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">postTeam</span>
-                <span class="method-start">22250 ms</span>
+                <span class="method-name">clusterAPITest</span>
+                <span class="method-start">20647 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.Pojo_Bookit_Clusters</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">22768 ms</span>
+                <span class="method-start">20950 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">clusterAPITest</span>
-                <span class="method-start">24303 ms</span>
+                <span class="method-start">23493 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.WPUtilityDemo</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">24623 ms</span>
+                <span class="method-start">23800 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">create_user_with_role</span>
-                <span class="method-start">24624 ms</span>
+                <span class="method-start">23801 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.Pojo_Cybertek_Instructors</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">allInstructorTest</span>
-                <span class="method-start">25325 ms</span>
+                <span class="method-start">24652 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">oneInstructorTest</span>
-                <span class="method-start">25512 ms</span>
+                <span class="method-start">24882 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.JsonPayloadExample</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">25622 ms</span>
+                <span class="method-start">25001 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">jsonPayLoadTest</span>
-                <span class="method-start">25623 ms</span>
+                <span class="method-start">25002 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.Pojo_Cybertek_Students</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">allStudentsAPITest</span>
-                <span class="method-start">26240 ms</span>
+                <span class="method-start">25750 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">oneStudentAPITest1</span>
-                <span class="method-start">26489 ms</span>
+                <span class="method-start">25994 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.JWTAuthentication01</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getToken</span>
-                <span class="method-start">26604 ms</span>
+                <span class="method-start">26108 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.Pojo_JsonPathDemo_Drivers</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">driverTestWithPojo</span>
-                <span class="method-start">27019 ms</span>
+                <span class="method-start">26656 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">driversTestWithJsonPath</span>
-                <span class="method-start">27317 ms</span>
+                <span class="method-start">26960 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">personTest</span>
-                <span class="method-start">29061 ms</span>
+                <span class="method-start">27289 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testString</span>
-                <span class="method-start">29064 ms</span>
+                <span class="method-start">27293 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.QueryParameterDemo</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">29066 ms</span>
+                <span class="method-start">27295 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">agetCityNameTest</span>
-                <span class="method-start">29067 ms</span>
+                <span class="method-start">27296 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">amountAndRegionTest</span>
-                <span class="method-start">29756 ms</span>
+                <span class="method-start">27989 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">bgetRegionNameTest</span>
-                <span class="method-start">30091 ms</span>
+                <span class="method-start">28351 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">cgetAmountAndRegionTest</span>
-                <span class="method-start">30779 ms</span>
+                <span class="method-start">29065 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">dgetAmountAndRegionGenderTest</span>
-                <span class="method-start">31471 ms</span>
+                <span class="method-start">29784 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.ResponseBodyVerification</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">32170 ms</span>
+                <span class="method-start">30476 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testBody</span>
-                <span class="method-start">32171 ms</span>
+                <span class="method-start">30477 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testBody2</span>
-                <span class="method-start">32611 ms</span>
+                <span class="method-start">30916 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testBody3</span>
-                <span class="method-start">32941 ms</span>
+                <span class="method-start">31246 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyNumberOfResults</span>
-                <span class="method-start">33285 ms</span>
+                <span class="method-start">31577 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.ResponseManipulation</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">33616 ms</span>
+                <span class="method-start">31909 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">getWP1PostsTests</span>
-                <span class="method-start">33616 ms</span>
+                <span class="method-start">31909 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.RestAssuredLoggingDemo</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">logginTest</span>
-                <span class="method-start">34401 ms</span>
+                <span class="method-start">32654 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.StatusCodeValidation</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">38216 ms</span>
+                <span class="method-start">37208 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testOK</span>
-                <span class="method-start">38216 ms</span>
+                <span class="method-start">37208 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.JWTAuthenticationOnCybertek</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">38570 ms</span>
+                <span class="method-start">37555 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">coursesModulesTest</span>
-                <span class="method-start">38571 ms</span>
+                <span class="method-start">37556 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.JWTAuthentication01</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">postPostsWithToken</span>
-                <span class="method-start">39547 ms</span>
+                <span class="method-start">38341 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -2035,14 +2035,14 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">update_user</span>
-                <span class="method-start">40309 ms</span>
+                <span class="method-start">39115 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">APIReview.JWTAuthentication01</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">postUserWithJWT</span>
-                <span class="method-start">41173 ms</span>
+                <span class="method-start">39999 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -2051,7 +2051,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">delete_user</span>
-                <span class="method-start">41823 ms</span>
+                <span class="method-start">40634 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

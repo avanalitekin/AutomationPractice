@@ -29,11 +29,12 @@ public class JWTAuthentication01 {
 	
 	Response response=RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.URLENC)
 			.formParam("username", "avanalitekin").formParam("password", "3mersule").post("/token");
+	response.then().log().all();
 	token="Bearer "+response.jsonPath().get("token");
 	System.out.println(token);
 	}
 	
-	@Test (priority=1)
+//	@Test (priority=1)
 	public void postPostsWithToken() {
 		RestAssured.baseURI="https://www.avanalitekin-api-testing.dev.cc";
 		RestAssured.basePath="/wp-json/wp/v2";
@@ -55,7 +56,7 @@ public class JWTAuthentication01 {
 		
 	}
 	
-	@Test (priority=2)
+//	@Test (priority=2)
 	public void postUserWithJWT() {
 		RestAssured.baseURI="https://www.avanalitekin-api-testing.dev.cc";
 		RestAssured.basePath="/wp-json/wp/v2";

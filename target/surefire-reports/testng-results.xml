@@ -2,73 +2,26 @@
 <testng-results skipped="1" failed="15" ignored="0" total="57" passed="41">
   <reporter-output>
   </reporter-output>
-  <suite name="AutomationPractice" duration-ms="42227" started-at="2019-05-19T00:18:58Z" finished-at="2019-05-19T00:19:40Z">
+  <suite name="AutomationPractice" duration-ms="41053" started-at="2019-05-19T00:30:25Z" finished-at="2019-05-19T00:31:06Z">
     <groups>
     </groups>
-    <test name="APITesting" duration-ms="42227" started-at="2019-05-19T00:18:58Z" finished-at="2019-05-19T00:19:40Z">
+    <test name="APITesting" duration-ms="41053" started-at="2019-05-19T00:30:25Z" finished-at="2019-05-19T00:31:06Z">
+      <class name="APIReview.Pojo_Cybertek_Instructors">
+        <test-method status="PASS" signature="allInstructorTest()[pri:0, instance:APIReview.Pojo_Cybertek_Instructors@2ea6137]" name="allInstructorTest" duration-ms="230" started-at="2019-05-19T00:30:49Z" finished-at="2019-05-19T00:30:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allInstructorTest -->
+        <test-method status="PASS" signature="oneInstructorTest()[pri:0, instance:APIReview.Pojo_Cybertek_Instructors@2ea6137]" name="oneInstructorTest" duration-ms="119" started-at="2019-05-19T00:30:50Z" finished-at="2019-05-19T00:30:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneInstructorTest -->
+      </class> <!-- APIReview.Pojo_Cybertek_Instructors -->
       <class name="APIReview.JsonPathDemoBookIt">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.JsonPathDemoBookIt@2357d90a]" name="setUp" is-config="true" duration-ms="1802" started-at="2019-05-19T00:19:18Z" finished-at="2019-05-19T00:19:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.JsonPathDemoBookIt@7f9fcf7f]" name="setUp" is-config="true" duration-ms="1614" started-at="2019-05-19T00:30:43Z" finished-at="2019-05-19T00:30:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="clusterAPITest()[pri:0, instance:APIReview.JsonPathDemoBookIt@2357d90a]" name="clusterAPITest" duration-ms="286" started-at="2019-05-19T00:19:20Z" finished-at="2019-05-19T00:19:20Z">
-          <exception class="io.restassured.path.json.exception.JsonPathException">
-            <message>
-              <![CDATA[Failed to parse the JSON document]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:986)
-at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:951)
-at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1031)
-at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-at io.restassured.path.json.JsonPath.getMap(JsonPath.java:434)
-at APIReview.JsonPathDemoBookIt.clusterAPITest(JsonPathDemoBookIt.java:61)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'r', no possible valid JSON value or punctuation could be recognized.
-at groovy.json.JsonLexer.nextToken(JsonLexer.java:87)
-at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:949)
-at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:984)
-... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clusterAPITest -->
-        <test-method status="FAIL" signature="postTeam()[pri:0, instance:APIReview.JsonPathDemoBookIt@2357d90a]" name="postTeam" duration-ms="517" started-at="2019-05-19T00:19:20Z" finished-at="2019-05-19T00:19:20Z">
+        <test-method status="FAIL" signature="postTeam()[pri:0, instance:APIReview.JsonPathDemoBookIt@7f9fcf7f]" name="postTeam" duration-ms="625" started-at="2019-05-19T00:30:45Z" finished-at="2019-05-19T00:30:45Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -136,13 +89,70 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postTeam -->
-        <test-method status="SKIP" signature="postStudent()[pri:0, instance:APIReview.JsonPathDemoBookIt@2357d90a]" name="postStudent" duration-ms="1" started-at="2019-05-19T00:19:23Z" depends-on-methods="APIReview.JsonPathDemoBookIt.postTeam" finished-at="2019-05-19T00:19:23Z">
-          <exception class="java.lang.Throwable">
+        <test-method status="FAIL" signature="clusterAPITest()[pri:0, instance:APIReview.JsonPathDemoBookIt@7f9fcf7f]" name="clusterAPITest" duration-ms="302" started-at="2019-05-19T00:30:45Z" finished-at="2019-05-19T00:30:46Z">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
             <message>
-              <![CDATA[Method JsonPathDemoBookIt.postStudent()[pri:0, instance:APIReview.JsonPathDemoBookIt@2357d90a] depends on not successfully finished methods]]>
+              <![CDATA[Failed to parse the JSON document]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method JsonPathDemoBookIt.postStudent()[pri:0, instance:APIReview.JsonPathDemoBookIt@2357d90a] depends on not successfully finished methods
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:986)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:951)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1031)
+at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at io.restassured.path.json.JsonPath.getMap(JsonPath.java:434)
+at APIReview.JsonPathDemoBookIt.clusterAPITest(JsonPathDemoBookIt.java:61)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'r', no possible valid JSON value or punctuation could be recognized.
+at groovy.json.JsonLexer.nextToken(JsonLexer.java:87)
+at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:949)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:984)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clusterAPITest -->
+        <test-method status="SKIP" signature="postStudent()[pri:0, instance:APIReview.JsonPathDemoBookIt@7f9fcf7f]" name="postStudent" duration-ms="0" started-at="2019-05-19T00:30:49Z" depends-on-methods="APIReview.JsonPathDemoBookIt.postTeam" finished-at="2019-05-19T00:30:49Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method JsonPathDemoBookIt.postStudent()[pri:0, instance:APIReview.JsonPathDemoBookIt@7f9fcf7f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method JsonPathDemoBookIt.postStudent()[pri:0, instance:APIReview.JsonPathDemoBookIt@7f9fcf7f] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -172,26 +182,16 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
           </reporter-output>
         </test-method> <!-- postStudent -->
       </class> <!-- APIReview.JsonPathDemoBookIt -->
-      <class name="APIReview.Pojo_Cybertek_Instructors">
-        <test-method status="PASS" signature="allInstructorTest()[pri:0, instance:APIReview.Pojo_Cybertek_Instructors@41ee392b]" name="allInstructorTest" duration-ms="187" started-at="2019-05-19T00:19:23Z" finished-at="2019-05-19T00:19:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allInstructorTest -->
-        <test-method status="PASS" signature="oneInstructorTest()[pri:0, instance:APIReview.Pojo_Cybertek_Instructors@41ee392b]" name="oneInstructorTest" duration-ms="110" started-at="2019-05-19T00:19:23Z" finished-at="2019-05-19T00:19:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oneInstructorTest -->
-      </class> <!-- APIReview.Pojo_Cybertek_Instructors -->
       <class name="APIReview.WPUtilityDemo">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.WPUtilityDemo@525f1e4e]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-19T00:19:22Z" finished-at="2019-05-19T00:19:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.WPUtilityDemo@275710fc]" name="setUp" is-config="true" duration-ms="1" started-at="2019-05-19T00:30:49Z" finished-at="2019-05-19T00:30:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="create_user_with_role()[pri:0, instance:APIReview.WPUtilityDemo@525f1e4e]" name="create_user_with_role" duration-ms="699" started-at="2019-05-19T00:19:22Z" finished-at="2019-05-19T00:19:23Z">
+        <test-method status="PASS" signature="create_user_with_role()[pri:0, instance:APIReview.WPUtilityDemo@275710fc]" name="create_user_with_role" duration-ms="849" started-at="2019-05-19T00:30:49Z" finished-at="2019-05-19T00:30:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create_user_with_role -->
-        <test-method status="FAIL" signature="update_user()[pri:1, instance:APIReview.WPUtilityDemo@525f1e4e]" name="update_user" duration-ms="863" started-at="2019-05-19T00:19:38Z" finished-at="2019-05-19T00:19:39Z">
+        <test-method status="FAIL" signature="update_user()[pri:1, instance:APIReview.WPUtilityDemo@275710fc]" name="update_user" duration-ms="883" started-at="2019-05-19T00:31:04Z" finished-at="2019-05-19T00:31:05Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -260,7 +260,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- update_user -->
-        <test-method status="FAIL" signature="delete_user()[pri:2, instance:APIReview.WPUtilityDemo@525f1e4e]" name="delete_user" duration-ms="375" started-at="2019-05-19T00:19:39Z" finished-at="2019-05-19T00:19:40Z">
+        <test-method status="FAIL" signature="delete_user()[pri:2, instance:APIReview.WPUtilityDemo@275710fc]" name="delete_user" duration-ms="387" started-at="2019-05-19T00:31:05Z" finished-at="2019-05-19T00:31:06Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -331,23 +331,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
         </test-method> <!-- delete_user -->
       </class> <!-- APIReview.WPUtilityDemo -->
       <class name="APIReview.LoginDemo">
-        <test-method status="PASS" signature="userNamePasswordTest()[pri:0, instance:APIReview.LoginDemo@8b96fde]" name="userNamePasswordTest" duration-ms="324" started-at="2019-05-19T00:19:01Z" finished-at="2019-05-19T00:19:02Z">
+        <test-method status="PASS" signature="userNamePasswordTest()[pri:0, instance:APIReview.LoginDemo@15bb6bea]" name="userNamePasswordTest" duration-ms="326" started-at="2019-05-19T00:30:29Z" finished-at="2019-05-19T00:30:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userNamePasswordTest -->
       </class> <!-- APIReview.LoginDemo -->
       <class name="APIReview.MatcherAssert_MatchersDemo">
-        <test-method status="PASS" signature="matcherAssert_Matchers_Test()[pri:0, instance:APIReview.MatcherAssert_MatchersDemo@2d2e5f00]" name="matcherAssert_Matchers_Test" duration-ms="5" started-at="2019-05-19T00:19:07Z" finished-at="2019-05-19T00:19:07Z">
+        <test-method status="PASS" signature="matcherAssert_Matchers_Test()[pri:0, instance:APIReview.MatcherAssert_MatchersDemo@8b96fde]" name="matcherAssert_Matchers_Test" duration-ms="7" started-at="2019-05-19T00:30:34Z" finished-at="2019-05-19T00:30:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- matcherAssert_Matchers_Test -->
       </class> <!-- APIReview.MatcherAssert_MatchersDemo -->
       <class name="APIReview.WP1_API_Posts">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.WP1_API_Posts@64c87930]" name="setUp" is-config="true" duration-ms="1" started-at="2019-05-19T00:19:02Z" finished-at="2019-05-19T00:19:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.WP1_API_Posts@55040f2f]" name="setUp" is-config="true" duration-ms="1" started-at="2019-05-19T00:30:29Z" finished-at="2019-05-19T00:30:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="deletePost()[pri:0, instance:APIReview.WP1_API_Posts@64c87930]" name="deletePost" duration-ms="750" started-at="2019-05-19T00:19:02Z" finished-at="2019-05-19T00:19:02Z">
+        <test-method status="FAIL" signature="deletePost()[pri:0, instance:APIReview.WP1_API_Posts@55040f2f]" name="deletePost" duration-ms="727" started-at="2019-05-19T00:30:29Z" finished-at="2019-05-19T00:30:30Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -426,24 +426,24 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletePost -->
-        <test-method status="PASS" signature="getPostSatusTest()[pri:0, instance:APIReview.WP1_API_Posts@64c87930]" name="getPostSatusTest" duration-ms="515" started-at="2019-05-19T00:19:02Z" finished-at="2019-05-19T00:19:03Z">
+        <test-method status="PASS" signature="getPostSatusTest()[pri:0, instance:APIReview.WP1_API_Posts@55040f2f]" name="getPostSatusTest" duration-ms="527" started-at="2019-05-19T00:30:30Z" finished-at="2019-05-19T00:30:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPostSatusTest -->
-        <test-method status="FAIL" signature="ifValidationFailsTest()[pri:0, instance:APIReview.WP1_API_Posts@64c87930]" name="ifValidationFailsTest" duration-ms="615" started-at="2019-05-19T00:19:03Z" finished-at="2019-05-19T00:19:04Z">
+        <test-method status="FAIL" signature="ifValidationFailsTest()[pri:0, instance:APIReview.WP1_API_Posts@55040f2f]" name="ifValidationFailsTest" duration-ms="619" started-at="2019-05-19T00:30:30Z" finished-at="2019-05-19T00:30:31Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
 JSON path id doesn't match.
 Expected: a collection containing <39>
-  Actual: [42]
+  Actual: [44]
 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 JSON path id doesn't match.
 Expected: a collection containing <39>
-  Actual: [42]
+  Actual: [44]
 
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -508,15 +508,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ifValidationFailsTest -->
-        <test-method status="PASS" signature="postTest()[pri:0, instance:APIReview.WP1_API_Posts@64c87930]" name="postTest" duration-ms="801" started-at="2019-05-19T00:19:04Z" finished-at="2019-05-19T00:19:04Z">
+        <test-method status="PASS" signature="postTest()[pri:0, instance:APIReview.WP1_API_Posts@55040f2f]" name="postTest" duration-ms="716" started-at="2019-05-19T00:30:31Z" finished-at="2019-05-19T00:30:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postTest -->
-        <test-method status="PASS" signature="prettyPrintBody()[pri:0, instance:APIReview.WP1_API_Posts@64c87930]" name="prettyPrintBody" duration-ms="1273" started-at="2019-05-19T00:19:04Z" finished-at="2019-05-19T00:19:06Z">
+        <test-method status="PASS" signature="prettyPrintBody()[pri:0, instance:APIReview.WP1_API_Posts@55040f2f]" name="prettyPrintBody" duration-ms="1272" started-at="2019-05-19T00:30:32Z" finished-at="2019-05-19T00:30:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prettyPrintBody -->
-        <test-method status="FAIL" signature="putTest()[pri:0, instance:APIReview.WP1_API_Posts@64c87930]" name="putTest" duration-ms="569" started-at="2019-05-19T00:19:06Z" finished-at="2019-05-19T00:19:06Z">
+        <test-method status="FAIL" signature="putTest()[pri:0, instance:APIReview.WP1_API_Posts@55040f2f]" name="putTest" duration-ms="501" started-at="2019-05-19T00:30:33Z" finished-at="2019-05-19T00:30:33Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -585,11 +585,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putTest -->
-        <test-method status="PASS" signature="testWithHamcrest()[pri:0, instance:APIReview.WP1_API_Posts@64c87930]" name="testWithHamcrest" duration-ms="3" started-at="2019-05-19T00:19:06Z" finished-at="2019-05-19T00:19:06Z">
+        <test-method status="PASS" signature="testWithHamcrest()[pri:0, instance:APIReview.WP1_API_Posts@55040f2f]" name="testWithHamcrest" duration-ms="2" started-at="2019-05-19T00:30:33Z" finished-at="2019-05-19T00:30:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWithHamcrest -->
-        <test-method status="FAIL" signature="trashPost()[pri:0, instance:APIReview.WP1_API_Posts@64c87930]" name="trashPost" duration-ms="550" started-at="2019-05-19T00:19:06Z" finished-at="2019-05-19T00:19:07Z">
+        <test-method status="FAIL" signature="trashPost()[pri:0, instance:APIReview.WP1_API_Posts@55040f2f]" name="trashPost" duration-ms="421" started-at="2019-05-19T00:30:33Z" finished-at="2019-05-19T00:30:34Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -658,43 +658,43 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- trashPost -->
-        <test-method status="PASS" signature="verifyBodyTest()[pri:0, instance:APIReview.WP1_API_Posts@64c87930]" name="verifyBodyTest" duration-ms="621" started-at="2019-05-19T00:19:07Z" finished-at="2019-05-19T00:19:07Z">
+        <test-method status="PASS" signature="verifyBodyTest()[pri:0, instance:APIReview.WP1_API_Posts@55040f2f]" name="verifyBodyTest" duration-ms="498" started-at="2019-05-19T00:30:34Z" finished-at="2019-05-19T00:30:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBodyTest -->
       </class> <!-- APIReview.WP1_API_Posts -->
       <class name="APIReview.JsonConversion">
-        <test-method status="PASS" signature="convertXMLToJson()[pri:0, instance:APIReview.JsonConversion@44a664f2]" name="convertXMLToJson" duration-ms="15" started-at="2019-05-19T00:19:07Z" finished-at="2019-05-19T00:19:07Z">
+        <test-method status="PASS" signature="convertXMLToJson()[pri:0, instance:APIReview.JsonConversion@7f77e91b]" name="convertXMLToJson" duration-ms="12" started-at="2019-05-19T00:30:34Z" finished-at="2019-05-19T00:30:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- convertXMLToJson -->
       </class> <!-- APIReview.JsonConversion -->
       <class name="APIReview.GetAPIData">
-        <test-method status="PASS" signature="testAPIData1()[pri:0, instance:APIReview.GetAPIData@7f77e91b]" name="testAPIData1" duration-ms="2237" started-at="2019-05-19T00:18:58Z" finished-at="2019-05-19T00:19:00Z">
+        <test-method status="PASS" signature="testAPIData1()[pri:0, instance:APIReview.GetAPIData@1a38c59b]" name="testAPIData1" duration-ms="2380" started-at="2019-05-19T00:30:25Z" finished-at="2019-05-19T00:30:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAPIData1 -->
-        <test-method status="PASS" signature="testAPIData2()[pri:0, instance:APIReview.GetAPIData@7f77e91b]" name="testAPIData2" duration-ms="1443" started-at="2019-05-19T00:19:00Z" finished-at="2019-05-19T00:19:01Z">
+        <test-method status="PASS" signature="testAPIData2()[pri:0, instance:APIReview.GetAPIData@1a38c59b]" name="testAPIData2" duration-ms="1517" started-at="2019-05-19T00:30:27Z" finished-at="2019-05-19T00:30:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAPIData2 -->
       </class> <!-- APIReview.GetAPIData -->
       <class name="APIReview.Pojo_Cybertek_Students">
-        <test-method status="PASS" signature="allStudentsAPITest()[pri:0, instance:APIReview.Pojo_Cybertek_Students@1e67a849]" name="allStudentsAPITest" duration-ms="248" started-at="2019-05-19T00:19:24Z" finished-at="2019-05-19T00:19:24Z">
+        <test-method status="PASS" signature="allStudentsAPITest()[pri:0, instance:APIReview.Pojo_Cybertek_Students@41ee392b]" name="allStudentsAPITest" duration-ms="243" started-at="2019-05-19T00:30:51Z" finished-at="2019-05-19T00:30:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allStudentsAPITest -->
-        <test-method status="PASS" signature="oneStudentAPITest1()[pri:0, instance:APIReview.Pojo_Cybertek_Students@1e67a849]" name="oneStudentAPITest1" duration-ms="114" started-at="2019-05-19T00:19:24Z" finished-at="2019-05-19T00:19:24Z">
+        <test-method status="PASS" signature="oneStudentAPITest1()[pri:0, instance:APIReview.Pojo_Cybertek_Students@41ee392b]" name="oneStudentAPITest1" duration-ms="113" started-at="2019-05-19T00:30:51Z" finished-at="2019-05-19T00:30:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneStudentAPITest1 -->
       </class> <!-- APIReview.Pojo_Cybertek_Students -->
       <class name="APIReview.StatusCodeValidation">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.StatusCodeValidation@55040f2f]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-19T00:19:36Z" finished-at="2019-05-19T00:19:36Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.StatusCodeValidation@6ee12bac]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-19T00:31:02Z" finished-at="2019-05-19T00:31:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testOK()[pri:0, instance:APIReview.StatusCodeValidation@55040f2f]" name="testOK" duration-ms="352" started-at="2019-05-19T00:19:36Z" finished-at="2019-05-19T00:19:36Z">
+        <test-method status="FAIL" signature="testOK()[pri:0, instance:APIReview.StatusCodeValidation@6ee12bac]" name="testOK" duration-ms="345" started-at="2019-05-19T00:31:02Z" finished-at="2019-05-19T00:31:02Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -764,11 +764,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
         </test-method> <!-- testOK -->
       </class> <!-- APIReview.StatusCodeValidation -->
       <class name="APIReview.Pojo_Bookit_Clusters">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.Pojo_Bookit_Clusters@2ea6137]" name="setUp" is-config="true" duration-ms="1535" started-at="2019-05-19T00:19:20Z" finished-at="2019-05-19T00:19:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.Pojo_Bookit_Clusters@4c40b76e]" name="setUp" is-config="true" duration-ms="2542" started-at="2019-05-19T00:30:46Z" finished-at="2019-05-19T00:30:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="clusterAPITest()[pri:0, instance:APIReview.Pojo_Bookit_Clusters@2ea6137]" name="clusterAPITest" duration-ms="318" started-at="2019-05-19T00:19:22Z" finished-at="2019-05-19T00:19:22Z">
+        <test-method status="FAIL" signature="clusterAPITest()[pri:0, instance:APIReview.Pojo_Bookit_Clusters@4c40b76e]" name="clusterAPITest" duration-ms="307" started-at="2019-05-19T00:30:48Z" finished-at="2019-05-19T00:30:49Z">
           <exception class="com.fasterxml.jackson.core.JsonParseException">
             <message>
               <![CDATA[Unrecognized token 'requested': was expecting ('true', 'false' or 'null')
@@ -823,29 +823,29 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
         </test-method> <!-- clusterAPITest -->
       </class> <!-- APIReview.Pojo_Bookit_Clusters -->
       <class name="APIReview.JWTAuthenticationOnCybertek">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.JWTAuthenticationOnCybertek@15bb6bea]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-19T00:19:36Z" finished-at="2019-05-19T00:19:36Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.JWTAuthenticationOnCybertek@145eaa29]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-19T00:31:02Z" finished-at="2019-05-19T00:31:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="coursesModulesTest()[pri:0, instance:APIReview.JWTAuthenticationOnCybertek@15bb6bea]" name="coursesModulesTest" duration-ms="975" started-at="2019-05-19T00:19:36Z" finished-at="2019-05-19T00:19:37Z">
+        <test-method status="PASS" signature="coursesModulesTest()[pri:0, instance:APIReview.JWTAuthenticationOnCybertek@145eaa29]" name="coursesModulesTest" duration-ms="785" started-at="2019-05-19T00:31:02Z" finished-at="2019-05-19T00:31:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- coursesModulesTest -->
       </class> <!-- APIReview.JWTAuthenticationOnCybertek -->
       <class name="APIReview.ResponseBodyVerification">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.ResponseBodyVerification@36f0f1be]" name="setUp" is-config="true" duration-ms="1" started-at="2019-05-19T00:19:30Z" finished-at="2019-05-19T00:19:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.ResponseBodyVerification@667a738]" name="setUp" is-config="true" duration-ms="1" started-at="2019-05-19T00:30:55Z" finished-at="2019-05-19T00:30:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testBody()[pri:0, instance:APIReview.ResponseBodyVerification@36f0f1be]" name="testBody" duration-ms="440" started-at="2019-05-19T00:19:30Z" finished-at="2019-05-19T00:19:30Z">
+        <test-method status="PASS" signature="testBody()[pri:0, instance:APIReview.ResponseBodyVerification@667a738]" name="testBody" duration-ms="439" started-at="2019-05-19T00:30:55Z" finished-at="2019-05-19T00:30:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBody -->
-        <test-method status="PASS" signature="testBody2()[pri:0, instance:APIReview.ResponseBodyVerification@36f0f1be]" name="testBody2" duration-ms="330" started-at="2019-05-19T00:19:30Z" finished-at="2019-05-19T00:19:31Z">
+        <test-method status="PASS" signature="testBody2()[pri:0, instance:APIReview.ResponseBodyVerification@667a738]" name="testBody2" duration-ms="330" started-at="2019-05-19T00:30:56Z" finished-at="2019-05-19T00:30:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBody2 -->
-        <test-method status="FAIL" signature="testBody3()[pri:0, instance:APIReview.ResponseBodyVerification@36f0f1be]" name="testBody3" duration-ms="344" started-at="2019-05-19T00:19:31Z" finished-at="2019-05-19T00:19:31Z">
+        <test-method status="FAIL" signature="testBody3()[pri:0, instance:APIReview.ResponseBodyVerification@667a738]" name="testBody3" duration-ms="330" started-at="2019-05-19T00:30:56Z" finished-at="2019-05-19T00:30:56Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -921,7 +921,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBody3 -->
-        <test-method status="FAIL" signature="verifyNumberOfResults()[pri:0, instance:APIReview.ResponseBodyVerification@36f0f1be]" name="verifyNumberOfResults" duration-ms="330" started-at="2019-05-19T00:19:31Z" finished-at="2019-05-19T00:19:31Z">
+        <test-method status="FAIL" signature="verifyNumberOfResults()[pri:0, instance:APIReview.ResponseBodyVerification@667a738]" name="verifyNumberOfResults" duration-ms="331" started-at="2019-05-19T00:30:56Z" finished-at="2019-05-19T00:30:57Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -999,19 +999,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
         </test-method> <!-- verifyNumberOfResults -->
       </class> <!-- APIReview.ResponseBodyVerification -->
       <class name="APIReview.PojoDemo_Person">
-        <test-method status="PASS" signature="GAndOMTest1()[pri:0, instance:APIReview.PojoDemo_Person@4c40b76e]" name="GAndOMTest1" duration-ms="91" started-at="2019-05-19T00:19:14Z" finished-at="2019-05-19T00:19:14Z">
+        <test-method status="PASS" signature="GAndOMTest1()[pri:0, instance:APIReview.PojoDemo_Person@2d2e5f00]" name="GAndOMTest1" duration-ms="85" started-at="2019-05-19T00:30:39Z" finished-at="2019-05-19T00:30:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GAndOMTest1 -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.PojoDemo_Person@4c40b76e]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-19T00:19:14Z" finished-at="2019-05-19T00:19:14Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.PojoDemo_Person@2d2e5f00]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-19T00:30:39Z" finished-at="2019-05-19T00:30:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="GAndOMTest2()[pri:0, instance:APIReview.PojoDemo_Person@4c40b76e]" name="GAndOMTest2" duration-ms="3" started-at="2019-05-19T00:19:14Z" finished-at="2019-05-19T00:19:14Z">
+        <test-method status="PASS" signature="GAndOMTest2()[pri:0, instance:APIReview.PojoDemo_Person@2d2e5f00]" name="GAndOMTest2" duration-ms="3" started-at="2019-05-19T00:30:40Z" finished-at="2019-05-19T00:30:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GAndOMTest2 -->
-        <test-method status="FAIL" signature="testWithAPI()[pri:0, instance:APIReview.PojoDemo_Person@4c40b76e]" name="testWithAPI" duration-ms="816" started-at="2019-05-19T00:19:14Z" finished-at="2019-05-19T00:19:15Z">
+        <test-method status="FAIL" signature="testWithAPI()[pri:0, instance:APIReview.PojoDemo_Person@2d2e5f00]" name="testWithAPI" duration-ms="740" started-at="2019-05-19T00:30:40Z" finished-at="2019-05-19T00:30:40Z">
           <exception class="com.google.gson.JsonSyntaxException">
             <message>
               <![CDATA[java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $]]>
@@ -1063,7 +1063,7 @@ at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(Refle
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWithAPI -->
-        <test-method status="FAIL" signature="testWithQueryParam()[pri:0, instance:APIReview.PojoDemo_Person@4c40b76e]" name="testWithQueryParam" duration-ms="344" started-at="2019-05-19T00:19:15Z" finished-at="2019-05-19T00:19:15Z">
+        <test-method status="FAIL" signature="testWithQueryParam()[pri:0, instance:APIReview.PojoDemo_Person@2d2e5f00]" name="testWithQueryParam" duration-ms="354" started-at="2019-05-19T00:30:40Z" finished-at="2019-05-19T00:30:41Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -1133,128 +1133,128 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
           </reporter-output>
         </test-method> <!-- testWithQueryParam -->
       </class> <!-- APIReview.PojoDemo_Person -->
-      <class name="APIReview.WP1_API_Users">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.WP1_API_Users@400cff1a]" name="setUp" is-config="true" duration-ms="1" started-at="2019-05-19T00:19:07Z" finished-at="2019-05-19T00:19:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="user_cannot_see_other_user_info()[pri:0, instance:APIReview.WP1_API_Users@400cff1a]" name="user_cannot_see_other_user_info" duration-ms="526" started-at="2019-05-19T00:19:07Z" finished-at="2019-05-19T00:19:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_cannot_see_other_user_info -->
-      </class> <!-- APIReview.WP1_API_Users -->
-      <class name="APIReview.ResponseManipulation">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.ResponseManipulation@157632c9]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-19T00:19:31Z" finished-at="2019-05-19T00:19:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getWP1PostsTests()[pri:0, instance:APIReview.ResponseManipulation@157632c9]" name="getWP1PostsTests" duration-ms="784" started-at="2019-05-19T00:19:31Z" finished-at="2019-05-19T00:19:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getWP1PostsTests -->
-      </class> <!-- APIReview.ResponseManipulation -->
       <class name="APIReview.JsonPathDemo">
-        <test-method status="PASS" signature="driverInfo()[pri:0, instance:APIReview.JsonPathDemo@7f9fcf7f]" name="driverInfo" duration-ms="418" started-at="2019-05-19T00:19:08Z" finished-at="2019-05-19T00:19:08Z">
+        <test-method status="PASS" signature="driverInfo()[pri:0, instance:APIReview.JsonPathDemo@44a664f2]" name="driverInfo" duration-ms="427" started-at="2019-05-19T00:30:35Z" finished-at="2019-05-19T00:30:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInfo -->
-        <test-method status="PASS" signature="driverInfo2()[pri:0, instance:APIReview.JsonPathDemo@7f9fcf7f]" name="driverInfo2" duration-ms="4937" started-at="2019-05-19T00:19:08Z" finished-at="2019-05-19T00:19:13Z">
+        <test-method status="PASS" signature="driverInfo2()[pri:0, instance:APIReview.JsonPathDemo@44a664f2]" name="driverInfo2" duration-ms="3287" started-at="2019-05-19T00:30:35Z" finished-at="2019-05-19T00:30:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInfo2 -->
-        <test-method status="PASS" signature="driverInfo3()[pri:0, instance:APIReview.JsonPathDemo@7f9fcf7f]" name="driverInfo3" duration-ms="364" started-at="2019-05-19T00:19:13Z" finished-at="2019-05-19T00:19:14Z">
+        <test-method status="PASS" signature="driverInfo3()[pri:0, instance:APIReview.JsonPathDemo@44a664f2]" name="driverInfo3" duration-ms="490" started-at="2019-05-19T00:30:39Z" finished-at="2019-05-19T00:30:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInfo3 -->
-        <test-method status="PASS" signature="instructorAll()[pri:0, instance:APIReview.JsonPathDemo@7f9fcf7f]" name="instructorAll" duration-ms="250" started-at="2019-05-19T00:19:14Z" finished-at="2019-05-19T00:19:14Z">
+        <test-method status="PASS" signature="instructorAll()[pri:0, instance:APIReview.JsonPathDemo@44a664f2]" name="instructorAll" duration-ms="292" started-at="2019-05-19T00:30:39Z" finished-at="2019-05-19T00:30:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instructorAll -->
-        <test-method status="PASS" signature="instructorOne()[pri:0, instance:APIReview.JsonPathDemo@7f9fcf7f]" name="instructorOne" duration-ms="151" started-at="2019-05-19T00:19:14Z" finished-at="2019-05-19T00:19:14Z">
+        <test-method status="PASS" signature="instructorOne()[pri:0, instance:APIReview.JsonPathDemo@44a664f2]" name="instructorOne" duration-ms="166" started-at="2019-05-19T00:30:39Z" finished-at="2019-05-19T00:30:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instructorOne -->
       </class> <!-- APIReview.JsonPathDemo -->
+      <class name="APIReview.WP1_API_Users">
+        <test-method status="PASS" signature="user_cannot_see_other_user_info()[pri:0, instance:APIReview.WP1_API_Users@64c87930]" name="user_cannot_see_other_user_info" duration-ms="459" started-at="2019-05-19T00:30:34Z" finished-at="2019-05-19T00:30:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_cannot_see_other_user_info -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.WP1_API_Users@64c87930]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-19T00:30:34Z" finished-at="2019-05-19T00:30:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- APIReview.WP1_API_Users -->
+      <class name="APIReview.ResponseManipulation">
+        <test-method status="PASS" signature="getWP1PostsTests()[pri:0, instance:APIReview.ResponseManipulation@36f0f1be]" name="getWP1PostsTests" duration-ms="745" started-at="2019-05-19T00:30:57Z" finished-at="2019-05-19T00:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWP1PostsTests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.ResponseManipulation@36f0f1be]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-19T00:30:57Z" finished-at="2019-05-19T00:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- APIReview.ResponseManipulation -->
       <class name="APIReview.JWTAuthentication01">
-        <test-method status="PASS" signature="getToken()[pri:0, instance:APIReview.JWTAuthentication01@145eaa29]" name="getToken" duration-ms="415" started-at="2019-05-19T00:19:24Z" finished-at="2019-05-19T00:19:25Z">
+        <test-method status="PASS" signature="getToken()[pri:0, instance:APIReview.JWTAuthentication01@6328d34a]" name="getToken" duration-ms="547" started-at="2019-05-19T00:30:51Z" finished-at="2019-05-19T00:30:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getToken -->
-        <test-method status="PASS" signature="postPostsWithToken()[pri:1, instance:APIReview.JWTAuthentication01@145eaa29]" name="postPostsWithToken" duration-ms="762" started-at="2019-05-19T00:19:37Z" finished-at="2019-05-19T00:19:38Z">
+        <test-method status="PASS" signature="postPostsWithToken()[pri:1, instance:APIReview.JWTAuthentication01@6328d34a]" name="postPostsWithToken" duration-ms="774" started-at="2019-05-19T00:31:03Z" finished-at="2019-05-19T00:31:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postPostsWithToken -->
-        <test-method status="PASS" signature="postUserWithJWT()[pri:2, instance:APIReview.JWTAuthentication01@145eaa29]" name="postUserWithJWT" duration-ms="650" started-at="2019-05-19T00:19:39Z" finished-at="2019-05-19T00:19:39Z">
+        <test-method status="PASS" signature="postUserWithJWT()[pri:2, instance:APIReview.JWTAuthentication01@6328d34a]" name="postUserWithJWT" duration-ms="634" started-at="2019-05-19T00:31:05Z" finished-at="2019-05-19T00:31:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postUserWithJWT -->
       </class> <!-- APIReview.JWTAuthentication01 -->
       <class name="APIReview.RestAssuredLoggingDemo">
-        <test-method status="PASS" signature="logginTest()[pri:0, instance:APIReview.RestAssuredLoggingDemo@6ee12bac]" name="logginTest" duration-ms="3814" started-at="2019-05-19T00:19:32Z" finished-at="2019-05-19T00:19:36Z">
+        <test-method status="PASS" signature="logginTest()[pri:0, instance:APIReview.RestAssuredLoggingDemo@157632c9]" name="logginTest" duration-ms="4553" started-at="2019-05-19T00:30:57Z" finished-at="2019-05-19T00:31:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logginTest -->
       </class> <!-- APIReview.RestAssuredLoggingDemo -->
       <class name="APIReview.QueryParameterDemo">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.QueryParameterDemo@667a738]" name="setUp" is-config="true" duration-ms="1" started-at="2019-05-19T00:19:27Z" finished-at="2019-05-19T00:19:27Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.QueryParameterDemo@57d5872c]" name="setUp" is-config="true" duration-ms="1" started-at="2019-05-19T00:30:52Z" finished-at="2019-05-19T00:30:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="agetCityNameTest()[pri:0, instance:APIReview.QueryParameterDemo@667a738]" name="agetCityNameTest" duration-ms="688" started-at="2019-05-19T00:19:27Z" finished-at="2019-05-19T00:19:27Z">
+        <test-method status="PASS" signature="agetCityNameTest()[pri:0, instance:APIReview.QueryParameterDemo@57d5872c]" name="agetCityNameTest" duration-ms="692" started-at="2019-05-19T00:30:52Z" finished-at="2019-05-19T00:30:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agetCityNameTest -->
-        <test-method status="PASS" signature="amountAndRegionTest()[pri:0, instance:APIReview.QueryParameterDemo@667a738]" name="amountAndRegionTest" duration-ms="335" started-at="2019-05-19T00:19:27Z" finished-at="2019-05-19T00:19:28Z">
+        <test-method status="PASS" signature="amountAndRegionTest()[pri:0, instance:APIReview.QueryParameterDemo@57d5872c]" name="amountAndRegionTest" duration-ms="361" started-at="2019-05-19T00:30:53Z" finished-at="2019-05-19T00:30:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amountAndRegionTest -->
-        <test-method status="PASS" signature="bgetRegionNameTest()[pri:0, instance:APIReview.QueryParameterDemo@667a738]" name="bgetRegionNameTest" duration-ms="687" started-at="2019-05-19T00:19:28Z" finished-at="2019-05-19T00:19:28Z">
+        <test-method status="PASS" signature="bgetRegionNameTest()[pri:0, instance:APIReview.QueryParameterDemo@57d5872c]" name="bgetRegionNameTest" duration-ms="713" started-at="2019-05-19T00:30:53Z" finished-at="2019-05-19T00:30:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bgetRegionNameTest -->
-        <test-method status="PASS" signature="cgetAmountAndRegionTest()[pri:0, instance:APIReview.QueryParameterDemo@667a738]" name="cgetAmountAndRegionTest" duration-ms="692" started-at="2019-05-19T00:19:28Z" finished-at="2019-05-19T00:19:29Z">
+        <test-method status="PASS" signature="cgetAmountAndRegionTest()[pri:0, instance:APIReview.QueryParameterDemo@57d5872c]" name="cgetAmountAndRegionTest" duration-ms="718" started-at="2019-05-19T00:30:54Z" finished-at="2019-05-19T00:30:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cgetAmountAndRegionTest -->
-        <test-method status="PASS" signature="dgetAmountAndRegionGenderTest()[pri:0, instance:APIReview.QueryParameterDemo@667a738]" name="dgetAmountAndRegionGenderTest" duration-ms="698" started-at="2019-05-19T00:19:29Z" finished-at="2019-05-19T00:19:30Z">
+        <test-method status="PASS" signature="dgetAmountAndRegionGenderTest()[pri:0, instance:APIReview.QueryParameterDemo@57d5872c]" name="dgetAmountAndRegionGenderTest" duration-ms="690" started-at="2019-05-19T00:30:55Z" finished-at="2019-05-19T00:30:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dgetAmountAndRegionGenderTest -->
       </class> <!-- APIReview.QueryParameterDemo -->
       <class name="APIReview.Pojo_JsonPathDemo_Drivers">
-        <test-method status="PASS" signature="driverTestWithPojo()[pri:0, instance:APIReview.Pojo_JsonPathDemo_Drivers@57d5872c]" name="driverTestWithPojo" duration-ms="297" started-at="2019-05-19T00:19:25Z" finished-at="2019-05-19T00:19:25Z">
+        <test-method status="PASS" signature="driverTestWithPojo()[pri:0, instance:APIReview.Pojo_JsonPathDemo_Drivers@1e67a849]" name="driverTestWithPojo" duration-ms="303" started-at="2019-05-19T00:30:51Z" finished-at="2019-05-19T00:30:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverTestWithPojo -->
-        <test-method status="PASS" signature="driversTestWithJsonPath()[pri:0, instance:APIReview.Pojo_JsonPathDemo_Drivers@57d5872c]" name="driversTestWithJsonPath" duration-ms="1743" started-at="2019-05-19T00:19:25Z" finished-at="2019-05-19T00:19:27Z">
+        <test-method status="PASS" signature="driversTestWithJsonPath()[pri:0, instance:APIReview.Pojo_JsonPathDemo_Drivers@1e67a849]" name="driversTestWithJsonPath" duration-ms="329" started-at="2019-05-19T00:30:52Z" finished-at="2019-05-19T00:30:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driversTestWithJsonPath -->
-        <test-method status="PASS" signature="personTest()[pri:0, instance:APIReview.Pojo_JsonPathDemo_Drivers@57d5872c]" name="personTest" duration-ms="3" started-at="2019-05-19T00:19:27Z" finished-at="2019-05-19T00:19:27Z">
+        <test-method status="PASS" signature="personTest()[pri:0, instance:APIReview.Pojo_JsonPathDemo_Drivers@1e67a849]" name="personTest" duration-ms="4" started-at="2019-05-19T00:30:52Z" finished-at="2019-05-19T00:30:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- personTest -->
-        <test-method status="PASS" signature="testString()[pri:0, instance:APIReview.Pojo_JsonPathDemo_Drivers@57d5872c]" name="testString" duration-ms="2" started-at="2019-05-19T00:19:27Z" finished-at="2019-05-19T00:19:27Z">
+        <test-method status="PASS" signature="testString()[pri:0, instance:APIReview.Pojo_JsonPathDemo_Drivers@1e67a849]" name="testString" duration-ms="2" started-at="2019-05-19T00:30:52Z" finished-at="2019-05-19T00:30:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testString -->
       </class> <!-- APIReview.Pojo_JsonPathDemo_Drivers -->
       <class name="APIReview.WP1_Map_Pojo_InsteadOfJsonPath">
-        <test-method status="PASS" signature="post_User_With_PojoClass()[pri:0, instance:APIReview.WP1_Map_Pojo_InsteadOfJsonPath@275710fc]" name="post_User_With_PojoClass" duration-ms="2511" started-at="2019-05-19T00:19:15Z" finished-at="2019-05-19T00:19:18Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.WP1_Map_Pojo_InsteadOfJsonPath@400cff1a]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-19T00:30:41Z" finished-at="2019-05-19T00:30:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="post_User_With_PojoClass()[pri:0, instance:APIReview.WP1_Map_Pojo_InsteadOfJsonPath@400cff1a]" name="post_User_With_PojoClass" duration-ms="2548" started-at="2019-05-19T00:30:41Z" finished-at="2019-05-19T00:30:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- post_User_With_PojoClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.WP1_Map_Pojo_InsteadOfJsonPath@275710fc]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-19T00:19:15Z" finished-at="2019-05-19T00:19:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
       </class> <!-- APIReview.WP1_Map_Pojo_InsteadOfJsonPath -->
       <class name="APIReview.JsonPayloadExample">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.JsonPayloadExample@6328d34a]" name="setUp" is-config="true" duration-ms="1" started-at="2019-05-19T00:19:23Z" finished-at="2019-05-19T00:19:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:APIReview.JsonPayloadExample@2357d90a]" name="setUp" is-config="true" duration-ms="1" started-at="2019-05-19T00:30:50Z" finished-at="2019-05-19T00:30:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="jsonPayLoadTest()[pri:0, instance:APIReview.JsonPayloadExample@6328d34a]" name="jsonPayLoadTest" duration-ms="616" started-at="2019-05-19T00:19:23Z" finished-at="2019-05-19T00:19:24Z">
+        <test-method status="FAIL" signature="jsonPayLoadTest()[pri:0, instance:APIReview.JsonPayloadExample@2357d90a]" name="jsonPayLoadTest" duration-ms="746" started-at="2019-05-19T00:30:50Z" finished-at="2019-05-19T00:30:51Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.

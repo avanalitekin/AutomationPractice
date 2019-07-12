@@ -3,6 +3,29 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AutomationPractice]">
   <test thread-count="5" verbose="0" name="APITesting(failed)">
     <classes>
+      <class name="APIReview.WP1_API_Posts">
+        <methods>
+          <include name="deletePost"/>
+          <include name="trashPost"/>
+          <include name="setUp"/>
+          <include name="putTest"/>
+          <include name="ifValidationFailsTest"/>
+        </methods>
+      </class> <!-- APIReview.WP1_API_Posts -->
+      <class name="APIReview.ResponseBodyVerification">
+        <methods>
+          <include name="testBody3"/>
+          <include name="setUp"/>
+          <include name="verifyNumberOfResults"/>
+        </methods>
+      </class> <!-- APIReview.ResponseBodyVerification -->
+      <class name="APIReview.PojoDemo_Person">
+        <methods>
+          <include name="testWithQueryParam"/>
+          <include name="testWithAPI"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- APIReview.PojoDemo_Person -->
       <class name="APIReview.WPUtilityDemo">
         <methods>
           <include name="update_user"/>
@@ -10,6 +33,12 @@
           <include name="delete_user"/>
         </methods>
       </class> <!-- APIReview.WPUtilityDemo -->
+      <class name="APIReview.StatusCodeValidation">
+        <methods>
+          <include name="testOK"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- APIReview.StatusCodeValidation -->
       <class name="APIReview.JsonPayloadExample">
         <methods>
           <include name="setUp"/>
@@ -30,35 +59,6 @@
           <include name="postStudent"/>
         </methods>
       </class> <!-- APIReview.JsonPathDemoBookIt -->
-      <class name="APIReview.PojoDemo_Person">
-        <methods>
-          <include name="testWithQueryParam"/>
-          <include name="testWithAPI"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- APIReview.PojoDemo_Person -->
-      <class name="APIReview.ResponseBodyVerification">
-        <methods>
-          <include name="testBody3"/>
-          <include name="setUp"/>
-          <include name="verifyNumberOfResults"/>
-        </methods>
-      </class> <!-- APIReview.ResponseBodyVerification -->
-      <class name="APIReview.WP1_API_Posts">
-        <methods>
-          <include name="deletePost"/>
-          <include name="trashPost"/>
-          <include name="setUp"/>
-          <include name="putTest"/>
-          <include name="ifValidationFailsTest"/>
-        </methods>
-      </class> <!-- APIReview.WP1_API_Posts -->
-      <class name="APIReview.StatusCodeValidation">
-        <methods>
-          <include name="testOK"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- APIReview.StatusCodeValidation -->
     </classes>
   </test> <!-- APITesting(failed) -->
 </suite> <!-- Failed suite [AutomationPractice] -->

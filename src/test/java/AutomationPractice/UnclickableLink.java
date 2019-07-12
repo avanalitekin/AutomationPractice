@@ -30,9 +30,9 @@ public class UnclickableLink {
 	public void testMouseOver() throws InterruptedException {
 		Thread.sleep(4000);
 		WebElement element = driver.findElement(By.id("persistent"));
-		element.click();
-//		Actions action = new Actions(driver);
-//		action.moveToElement(element).click().build().perform();
+//		element.click();
+		Actions action = new Actions(driver);
+		action.moveToElement(element).click().build().perform();
 
 	}
 

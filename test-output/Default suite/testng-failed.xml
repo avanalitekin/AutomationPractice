@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="APIReview.Pojo_JsonPathDemo_Drivers">
+      <class name="AutomationPractice.ScreenShot">
         <methods>
-          <include name="driverTestWithPojo"/>
+          <include name="screenshot"/>
         </methods>
-      </class> <!-- APIReview.Pojo_JsonPathDemo_Drivers -->
+      </class> <!-- AutomationPractice.ScreenShot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
